@@ -13,12 +13,12 @@
   <parameters>
     <parameter>
       <name>CONFIG_DIR</name>
-      <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration_INCR\config</default_value>
+      <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration\config</default_value>
       <description/>
     </parameter>
     <parameter>
       <name>ROOT_DIR</name>
-      <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration_INCR\</default_value>
+      <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration\</default_value>
       <description/>
     </parameter>
   </parameters>
@@ -405,8 +405,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>320</xloc>
-      <yloc>288</yloc>
+      <xloc>304</xloc>
+      <yloc>144</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -533,7 +533,7 @@
       <to>reset_city_id_seq</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
@@ -560,7 +560,7 @@
       <to>create_city</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
@@ -576,15 +576,6 @@
     <hop>
       <from>set_city_id_seq_to_max</from>
       <to>Success</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>set_variable</from>
-      <to>reset_city_id_seq</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>

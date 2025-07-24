@@ -13,7 +13,7 @@
   <parameters>
     <parameter>
       <name>CONFIG_DIR</name>
-      <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration_INCR\config</default_value>
+      <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration\config</default_value>
       <description/>
     </parameter>
     <parameter>
@@ -28,7 +28,7 @@
     </parameter>
     <parameter>
       <name>ROOT_DIR</name>
-      <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration_INCR\</default_value>
+      <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration\</default_value>
       <description/>
     </parameter>
     <parameter>

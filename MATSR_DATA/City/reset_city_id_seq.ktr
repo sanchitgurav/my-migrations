@@ -504,7 +504,7 @@
   <order>
   </order>
   <step>
-    <name>reset_city_id_seq</name>
+    <name>Execute SQL script</name>
     <type>ExecSQL</type>
     <description/>
     <distribute>Y</distribute>

@@ -504,7 +504,7 @@
   <order>
   </order>
   <step>
-    <name>set_max_id_state</name>
+    <name>Execute SQL script</name>
     <type>ExecSQL</type>
     <description/>
     <distribute>Y</distribute>
@@ -536,8 +536,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>160</xloc>
-      <yloc>144</yloc>
+      <xloc>172</xloc>
+      <yloc>148</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

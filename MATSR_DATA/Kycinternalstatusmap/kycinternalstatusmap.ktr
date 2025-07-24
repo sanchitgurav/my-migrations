@@ -508,7 +508,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration_TEST\MATSR_DATA\Kycinternalstatusmap\kycinternalstatusmap.csv</filename>
+    <filename>/kra-data/pentaho/ndml-kra.data-migration/MATSR_DATA/Kycinternalstatusmap/kycinternalstatusmap.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>

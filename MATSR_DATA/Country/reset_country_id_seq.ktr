@@ -447,14 +447,14 @@
   <notepads>
   </notepads>
   <connection>
-    <name>KRA_HOP_db</name>
-    <server>${HOP_DB_HOST}</server>
+    <name>KRA_v1_db</name>
+    <server>${SOURCE_DB_HOST}</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>${HOP_DB_DATABASE}</database>
-    <port>${HOP_DB_PORT}</port>
-    <username>${HOP_DB_USER}</username>
-    <password>${HOP_DB_PASSWORD}</password>
+    <database>${SOURCE_DB_DATABASE}</database>
+    <port>${SOURCE_DB_PORT}</port>
+    <username>${SOURCE_DB_USER}</username>
+    <password>${SOURCE_DB_PASSWORD}</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -477,7 +477,7 @@
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
-        <attribute>${HOP_DB_PORT}</attribute>
+        <attribute>${SOURCE_DB_PORT}</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
@@ -504,7 +504,7 @@
   <order>
   </order>
   <step>
-    <name>reset_country_id_seq</name>
+    <name>Execute SQL script</name>
     <type>ExecSQL</type>
     <description/>
     <distribute>Y</distribute>
@@ -514,12 +514,12 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>KRA_HOP_db</connection>
+    <connection>KRA_v1_db</connection>
     <execute_each_row>N</execute_each_row>
     <single_statement>Y</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>SELECT setval('country_id_seq', 1, false);</sql>
+    <sql>SELECT setval('temp_country_id_seq', 1, false);</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
@@ -536,8 +536,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>223</xloc>
-      <yloc>105</yloc>
+      <xloc>224</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

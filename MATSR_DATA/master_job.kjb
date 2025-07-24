@@ -13,12 +13,12 @@
   <parameters>
     <parameter>
       <name>CONFIG_DIR</name>
-      <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration_INCR\config</default_value>
+      <default_value>D:\my-migrations\Config</default_value>
       <description/>
     </parameter>
     <parameter>
       <name>ROOT_DIR</name>
-      <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration_INCR\</default_value>
+      <default_value>D:\my-migrations\</default_value>
       <description/>
     </parameter>
   </parameters>
@@ -316,7 +316,7 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>48</xloc>
-      <yloc>48</yloc>
+      <yloc>176</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -352,7 +352,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>416</xloc>
+      <xloc>480</xloc>
       <yloc>176</yloc>
       <attributes_kjc/>
     </entry>
@@ -389,7 +389,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>592</xloc>
+      <xloc>608</xloc>
       <yloc>176</yloc>
       <attributes_kjc/>
     </entry>
@@ -426,7 +426,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>784</xloc>
+      <xloc>736</xloc>
       <yloc>176</yloc>
       <attributes_kjc/>
     </entry>
@@ -463,7 +463,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>944</xloc>
+      <xloc>864</xloc>
       <yloc>176</yloc>
       <attributes_kjc/>
     </entry>
@@ -507,17 +507,12 @@
       <run_configuration>Pentaho local</run_configuration>
       <parameters>
         <pass_all_parameters>Y</pass_all_parameters>
-        <parameter>
-          <name>TRANS_LOG_TEXT</name>
-          <stream_name>TRANS_LOG_TEXT</stream_name>
-          <value/>
-        </parameter>
       </parameters>
       <set_append_logfile>N</set_append_logfile>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1152</xloc>
+      <xloc>1040</xloc>
       <yloc>176</yloc>
       <attributes_kjc/>
     </entry>
@@ -554,7 +549,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1312</xloc>
+      <xloc>1232</xloc>
       <yloc>176</yloc>
       <attributes_kjc/>
     </entry>
@@ -593,7 +588,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>48</xloc>
+      <xloc>176</xloc>
       <yloc>176</yloc>
       <attributes_kjc/>
     </entry>
@@ -630,7 +625,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1312</xloc>
+      <xloc>1232</xloc>
       <yloc>336</yloc>
       <attributes_kjc/>
     </entry>
@@ -667,7 +662,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1168</xloc>
+      <xloc>1072</xloc>
       <yloc>336</yloc>
       <attributes_kjc/>
     </entry>
@@ -894,13 +889,13 @@
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>log_end_failure</name>
+      <name>begin_alter_table</name>
       <description/>
       <type>TRANS</type>
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>C:/Users/Lenovo/Desktop/NDML_data_migration/ndml-kra.data-migration_INCR/MATSR_DATA/Prooftype/migration_log_end_failure.ktr</filename>
+      <filename>${ROOT_DIR}MATSR_DATA/begin_alter_table.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -928,57 +923,18 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1152</xloc>
-      <yloc>48</yloc>
-      <attributes_kjc/>
-    </entry>
-    <entry>
-      <name>begin_alter_master_tables</name>
-      <description/>
-      <type>TRANS</type>
-      <attributes/>
-      <specification_method>filename</specification_method>
-      <trans_object_id/>
-      <filename>C:/Users/Lenovo/Desktop/NDML_data_migration/ndml-kra.data-migration_INCR/MATSR_DATA/begin_alter_master_tables.ktr</filename>
-      <transname/>
-      <arg_from_previous>N</arg_from_previous>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <cluster>N</cluster>
-      <slave_server_name/>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <logging_remote_work>N</logging_remote_work>
-      <run_configuration>Pentaho local</run_configuration>
-      <suppress_result_data>N</suppress_result_data>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>224</xloc>
+      <xloc>336</xloc>
       <yloc>176</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>log_end_failure_country</name>
+      <name>country_fails</name>
       <description/>
       <type>TRANS</type>
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>C:/Users/Lenovo/Desktop/NDML_data_migration/ndml-kra.data-migration_INCR/MATSR_DATA/Prooftype/migration_log_end_failure.ktr</filename>
+      <filename>${ROOT_DIR}/MATSR_DATA/Country/migration_log_end_failure.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -1006,8 +962,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>416</xloc>
-      <yloc>48</yloc>
+      <xloc>480</xloc>
+      <yloc>32</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
@@ -1148,8 +1104,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Set_variable</from>
-      <to>begin_alter_master_tables</to>
+      <from>country_master</from>
+      <to>Success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -1157,7 +1113,16 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>begin_alter_master_tables</from>
+      <from>Set_variable</from>
+      <to>begin_alter_table</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>begin_alter_table</from>
       <to>country_master</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -1166,30 +1131,12 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>prooftype_master</from>
-      <to>log_end_failure</to>
+      <from>country_master</from>
+      <to>country_fails</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>country_master</from>
-      <to>log_end_failure_country</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>country_master</from>
-      <to>Success</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
   </hops>

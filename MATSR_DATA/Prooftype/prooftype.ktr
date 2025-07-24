@@ -522,14 +522,14 @@
     <name>CSV file input</name>
     <type>CsvInput</type>
     <description/>
-    <distribute>N</distribute>
+    <distribute>Y</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration_INCR\MATSR_DATA\Prooftype\prooftypes.csv</filename>
+    <filename>/kra-data/pentaho/ndml-kra.data-migration/MATSR_DATA/Prooftype/prooftypes.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -797,28 +797,6 @@
         <precision>-1</precision>
         <trim_type>both</trim_type>
       </field>
-      <field>
-        <name>x_updated_at</name>
-        <type>Timestamp</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>x_sync_at</name>
-        <type>Timestamp</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -921,7 +899,7 @@
     <name>Table output</name>
     <type>TableOutput</type>
     <description/>
-    <distribute>N</distribute>
+    <distribute>Y</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -955,7 +933,7 @@
         <stream_name>category</stream_name>
       </field>
       <field>
-        <column_name>codes</column_name>
+        <column_name>code</column_name>
         <stream_name>code</stream_name>
       </field>
       <field>
@@ -1046,18 +1024,6 @@
     </GUI>
   </step>
   <step_error_handling>
-    <error>
-      <source_step>Table output</source_step>
-      <target_step/>
-      <is_enabled>N</is_enabled>
-      <nr_valuename/>
-      <descriptions_valuename>errorDescription</descriptions_valuename>
-      <fields_valuename>errorFields</fields_valuename>
-      <codes_valuename>errorCode</codes_valuename>
-      <max_errors/>
-      <max_pct_errors/>
-      <min_pct_rows/>
-    </error>
   </step_error_handling>
   <slave-step-copy-partition-distribution>
   </slave-step-copy-partition-distribution>

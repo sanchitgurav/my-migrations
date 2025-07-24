@@ -447,14 +447,14 @@
   <notepads>
   </notepads>
   <connection>
-    <name>KRA_HOP_db</name>
-    <server>${HOP_DB_HOST}</server>
+    <name>KRA_v2_db</name>
+    <server>${TARGET_DB_HOST}</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>${HOP_DB_DATABASE}</database>
-    <port>${HOP_DB_PORT}</port>
-    <username>${HOP_DB_USER}</username>
-    <password>${HOP_DB_PASSWORD}</password>
+    <database>${TARGE_DB_DATABASE}</database>
+    <port>${TARGET_DB_PORT}</port>
+    <username>${TARGET_DB_USER}</username>
+    <password>${TARGET_DB_PASSWORD}</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -477,7 +477,7 @@
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
-        <attribute>${HOP_DB_PORT}</attribute>
+        <attribute>${TARGET_DB_PORT}</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
@@ -801,7 +801,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>KRA_HOP_db</connection>
+    <connection>KRA_v2_db</connection>
     <cache>N</cache>
     <cache_load_all>N</cache_load_all>
     <cache_size>0</cache_size>
@@ -884,7 +884,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>KRA_HOP_db</connection>
+    <connection>KRA_v2_db</connection>
     <schema>public</schema>
     <table>state</table>
     <commit>1000</commit>

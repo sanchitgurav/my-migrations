@@ -447,14 +447,14 @@
   <notepads>
   </notepads>
   <connection>
-    <name>KRA_HOP_db</name>
-    <server>${HOP_DB_HOST}</server>
+    <name>KRA_v2_db</name>
+    <server>${TARGET_DB_HOST}</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>${HOP_DB_DATABASE}</database>
-    <port>${HOP_DB_PORT}</port>
-    <username>${HOP_DB_USER}</username>
-    <password>${HOP_DB_PASSWORD}</password>
+    <database>${TARGE_DB_DATABASE}</database>
+    <port>${TARGET_DB_PORT}</port>
+    <username>${TARGET_DB_USER}</username>
+    <password>${TARGET_DB_PASSWORD}</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -477,7 +477,7 @@
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
-        <attribute>${HOP_DB_PORT}</attribute>
+        <attribute>${TARGET_DB_PORT}</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
@@ -504,7 +504,7 @@
   <order>
   </order>
   <step>
-    <name>reset_state_id_seq</name>
+    <name>Execute SQL script</name>
     <type>ExecSQL</type>
     <description/>
     <distribute>Y</distribute>
@@ -514,7 +514,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>KRA_HOP_db</connection>
+    <connection>KRA_v2_db</connection>
     <execute_each_row>N</execute_each_row>
     <single_statement>Y</single_statement>
     <replace_variables>N</replace_variables>

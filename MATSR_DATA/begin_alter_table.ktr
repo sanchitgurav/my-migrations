@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>receligibility</name>
+    <name>begin_alter_table</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -9,16 +9,6 @@
     <trans_status>0</trans_status>
     <directory>/</directory>
     <parameters>
-      <parameter>
-        <name>CONFIG_DIR</name>
-        <default_value>C:\Users\Lenovo\Documents\NDML KRA\ndml-kra.data-migration\config</default_value>
-        <description/>
-      </parameter>
-      <parameter>
-        <name>ROOT_DIR</name>
-        <default_value>C:\Users\Lenovo\Documents\NDML KRA\ndml-kra.data-migration\</default_value>
-        <description/>
-      </parameter>
     </parameters>
     <log>
       <trans-log-table>
@@ -438,14 +428,124 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2025/05/08 13:20:42.076</created_date>
+    <created_date>2025/07/16 16:10:55.051</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2025/05/08 13:20:42.076</modified_date>
+    <modified_date>2025/07/16 16:10:55.051</modified_date>
     <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
+  <connection>
+    <name>KRA_HOP_db</name>
+    <server>${HOP_DB_HOST}</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>${HOP_DB_DATABASE}</database>
+    <port>${HOP_DB_PORT}</port>
+    <username>${HOP_DB_USER}</username>
+    <password>${HOP_DB_PASSWORD}</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_POSTGRESQL.stringtype</code>
+        <attribute>unspecified</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>${HOP_DB_PORT}</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>KRA_v1_db</name>
+    <server>${SOURCE_DB_HOST}</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>${SOURCE_DB_DATABASE}</database>
+    <port>${SOURCE_DB_PORT}</port>
+    <username>${SOURCE_DB_USER}</username>
+    <password>${SOURCE_DB_PASSWORD}</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_POSTGRESQL.stringtype</code>
+        <attribute>unspecified</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>${SOURCE_DB_PORT}</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
   <connection>
     <name>KRA_v2_db</name>
     <server>${TARGET_DB_HOST}</server>
@@ -503,14 +603,29 @@
   </connection>
   <order>
     <hop>
-      <from>CSV file input</from>
-      <to>Table output</to>
+      <from>v1_migration_log</from>
+      <to>v2_migration_log</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>v2_migration_log</from>
+      <to>hop_migration_log</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>hop_migration_log</from>
+      <to>create_country</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>v2_migration_log</from>
+      <to>temp_create_country</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>CSV file input</name>
-    <type>CsvInput</type>
+    <name>create_country</name>
+    <type>ExecSQL</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -519,165 +634,85 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>/kra-data/pentaho/ndml-kra.data-migration/MATSR_DATA/Receligibility/receligibility.csv</filename>
-    <filename_field/>
-    <rownum_field/>
-    <include_filename>N</include_filename>
-    <separator>,</separator>
-    <enclosure>"</enclosure>
-    <header>Y</header>
-    <buffer_size>50000</buffer_size>
-    <lazy_conversion>Y</lazy_conversion>
-    <add_filename_result>N</add_filename_result>
-    <parallel>N</parallel>
-    <newline_possible>N</newline_possible>
-    <format>mixed</format>
-    <encoding/>
-    <fields>
-      <field>
-        <name>kyctype</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>20</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>data</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>3</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>document</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>3</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>ispoipoaadhar</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>3</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>xmlrequired</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>3</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>eligibility</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>3</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>extra_info</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>created_at</name>
-        <type>Timestamp</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>created_by</name>
-        <type>Integer</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>modified_at</name>
-        <type>Timestamp</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>modified_by</name>
-        <type>Integer</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>deleted_at</name>
-        <type>Timestamp</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-      <field>
-        <name>deleted_by</name>
-        <type>Integer</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-      </field>
-    </fields>
+    <connection>KRA_HOP_db</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>CREATE TABLE IF NOT EXISTS country
+(
+    id SERIAL PRIMARY KEY,
+    code character varying(3) NOT NULL,
+    isocode2 character varying(3),
+    isocode3 character varying(3),
+    isocodenum character varying(3),
+    kracode character varying(3),
+    okracode character varying(3),
+    fatcakracode character varying(3),
+    fatcaokracode character varying(3),
+    micode character varying(3),
+    rtacode character varying(3),
+    miicode character varying(3),
+    isfatca boolean NOT NULL,
+    ismi boolean NOT NULL,
+    isrta boolean NOT NULL,
+    name character varying(100),
+    extra_info jsonb DEFAULT '{}'::jsonb,
+    v1_code character varying(3),
+    isactive boolean NOT NULL DEFAULT false,
+    isdeleted boolean NOT NULL DEFAULT false,
+    created_at timestamp(6) with time zone DEFAULT now(),
+    created_by bigint,
+    modified_at timestamp(6) with time zone DEFAULT now(),
+    modified_by bigint,
+    deleted_at timestamp(6) with time zone,
+    deleted_by character varying(100) COLLATE pg_catalog."default" DEFAULT 'underscoresystem'::character varying
+    --CONSTRAINT country_created_by_fkey FOREIGN KEY (created_by)
+    --    REFERENCES users (id) MATCH SIMPLE
+    --    ON UPDATE NO ACTION
+    --    ON DELETE NO ACTION,
+    --CONSTRAINT country_modified_by_fkey FOREIGN KEY (modified_by)
+    --    REFERENCES users (id) MATCH SIMPLE
+    --    ON UPDATE NO ACTION
+    --    ON DELETE NO ACTION
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_country_code ON country(code);
+
+CREATE INDEX IF NOT EXISTS idx_country_isactive ON country(isactive);
+
+CREATE INDEX IF NOT EXISTS idx_country_isdeleted ON country(isdeleted);
+
+CREATE INDEX IF NOT EXISTS idx_country_kracode ON country(kracode);
+
+CREATE INDEX IF NOT EXISTS idx_country_okracode ON country(okracode);
+
+ALTER TABLE country ALTER COLUMN deleted_by DROP DEFAULT;
+
+ALTER TABLE country ALTER COLUMN deleted_by TYPE bigint USING deleted_by::bigint;
+
+--ALTER TABLE country ALTER COLUMN deleted_by SET DEFAULT 0;
+
+ALTER TABLE country DROP CONSTRAINT IF EXISTS country_deleted_by_fkey;
+
+--ALTER TABLE country ADD CONSTRAINT country_deleted_by_fkey
+--    FOREIGN KEY (deleted_by)
+--    REFERENCES users (id)
+--    ON UPDATE NO ACTION
+--    ON DELETE NO ACTION;
+
+ALTER TABLE country
+ADD COLUMN IF NOT EXISTS x_updated_at TIMESTAMPTZ,
+ADD COLUMN IF NOT EXISTS x_sync_at TIMESTAMPTZ;
+
+</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -687,14 +722,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>256</xloc>
-      <yloc>352</yloc>
+      <xloc>800</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Table output</name>
-    <type>TableOutput</type>
+    <name>hop_migration_log</name>
+    <type>ExecSQL</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -703,69 +738,33 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>KRA_v2_db</connection>
-    <schema>public</schema>
-    <table>receligibility</table>
-    <commit>1000</commit>
-    <truncate>N</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>Y</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-      <field>
-        <column_name>kyctype</column_name>
-        <stream_name>kyctype</stream_name>
-      </field>
-      <field>
-        <column_name>data</column_name>
-        <stream_name>data</stream_name>
-      </field>
-      <field>
-        <column_name>document</column_name>
-        <stream_name>document</stream_name>
-      </field>
-      <field>
-        <column_name>ispoipoaadhar</column_name>
-        <stream_name>ispoipoaadhar</stream_name>
-      </field>
-      <field>
-        <column_name>xmlrequired</column_name>
-        <stream_name>xmlrequired</stream_name>
-      </field>
-      <field>
-        <column_name>eligibility</column_name>
-        <stream_name>eligibility</stream_name>
-      </field>
-      <field>
-        <column_name>extra_info</column_name>
-        <stream_name>extra_info</stream_name>
-      </field>
-      <field>
-        <column_name>created_by</column_name>
-        <stream_name>created_by</stream_name>
-      </field>
-      <field>
-        <column_name>modified_by</column_name>
-        <stream_name>modified_by</stream_name>
-      </field>
-      <field>
-        <column_name>deleted_at</column_name>
-        <stream_name>deleted_at</stream_name>
-      </field>
-      <field>
-        <column_name>deleted_by</column_name>
-        <stream_name>deleted_by</stream_name>
-      </field>
-    </fields>
+    <connection>KRA_HOP_db</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>CREATE TABLE IF NOT EXISTS migration_log (
+
+	id 				BIGSERIAL PRIMARY KEY,
+    batch_id 		TIMESTAMP,
+    level 			CHARACTER VARYING,
+    table_type 		CHARACTER VARYING,
+    table_name_v1 	CHARACTER VARYING,
+    table_name_v2 	CHARACTER VARYING,
+    last_id 		BIGINT,
+    start_id 		BIGINT,
+    end_id 			BIGINT,
+    start_time 		TIMESTAMP,
+    end_time 		TIMESTAMP,
+    log 			JSONB
+);</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -776,7 +775,217 @@
     </remotesteps>
     <GUI>
       <xloc>592</xloc>
-      <yloc>352</yloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>v1_migration_log</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>KRA_v1_db</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>CREATE TABLE IF NOT EXISTS migration_log (
+	
+	id 				BIGSERIAL PRIMARY KEY,
+	--id				SERIAL PRIMARY KEY,
+    batch_id 		TIMESTAMP, --current time
+    level 			CHARACTER VARYING,	--info, debug, notice
+    table_type 		CHARACTER VARYING,	--master, transaction
+    table_name_v1 	CHARACTER VARYING,
+    temp_table_name_v1 	CHARACTER VARYING,		
+    table_name_v2 	CHARACTER VARYING,	--v2 table
+    last_id 		BIGINT,				--max id
+    start_id 		BIGINT,				--max id + 1
+    end_id 			BIGINT,				--max id after migration
+    start_time 		TIMESTAMP,			--migration start
+    end_time 		TIMESTAMP,			--migration end
+    log 			JSONB				--success/error msg
+);</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>v2_migration_log</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>KRA_v2_db</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>CREATE TABLE IF NOT EXISTS migration_log (
+
+	id 				BIGSERIAL PRIMARY KEY,
+    batch_id 		TIMESTAMP,
+    level 			CHARACTER VARYING,
+    table_type 		CHARACTER VARYING,
+    table_name_v1 	CHARACTER VARYING,
+    table_name_v2 	CHARACTER VARYING,
+    last_id 		BIGINT,
+    start_id 		BIGINT,
+    end_id 			BIGINT,
+    start_time 		TIMESTAMP,
+    end_time 		TIMESTAMP,
+    log 			JSONB
+);</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>temp_create_country</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>KRA_v1_db</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>Y</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>CREATE TABLE IF NOT EXISTS temp_country
+(
+    id SERIAL PRIMARY KEY,
+    code character varying(3) NOT NULL,
+    isocode2 character varying(3),
+    isocode3 character varying(3),
+    isocodenum character varying(3),
+    kracode character varying(3),
+    okracode character varying(3),
+    fatcakracode character varying(3),
+    fatcaokracode character varying(3),
+    micode character varying(3),
+    rtacode character varying(3),
+    miicode character varying(3),
+    isfatca boolean NOT NULL,
+    ismi boolean NOT NULL,
+    isrta boolean NOT NULL,
+    name character varying(100),
+    extra_info jsonb DEFAULT '{}'::jsonb,
+    v1_code character varying(3),
+    isactive boolean NOT NULL DEFAULT false,
+    isdeleted boolean NOT NULL DEFAULT false,
+    created_at timestamp(6) with time zone DEFAULT now(),
+    created_by bigint,
+    modified_at timestamp(6) with time zone DEFAULT now(),
+    modified_by bigint,
+    deleted_at timestamp(6) with time zone,
+    deleted_by character varying(100) COLLATE pg_catalog."default" DEFAULT 'underscoresystem'::character varying
+    --CONSTRAINT country_created_by_fkey FOREIGN KEY (created_by)
+    --    REFERENCES users (id) MATCH SIMPLE
+    --    ON UPDATE NO ACTION
+    --    ON DELETE NO ACTION,
+    --CONSTRAINT country_modified_by_fkey FOREIGN KEY (modified_by)
+    --    REFERENCES users (id) MATCH SIMPLE
+    --    ON UPDATE NO ACTION
+    --    ON DELETE NO ACTION
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_country_code ON temp_country(code);
+
+CREATE INDEX IF NOT EXISTS idx_country_isactive ON temp_country(isactive);
+
+CREATE INDEX IF NOT EXISTS idx_country_isdeleted ON temp_country(isdeleted);
+
+CREATE INDEX IF NOT EXISTS idx_country_kracode ON temp_country(kracode);
+
+CREATE INDEX IF NOT EXISTS idx_country_okracode ON temp_country(okracode);
+
+ALTER TABLE temp_country ALTER COLUMN deleted_by DROP DEFAULT;
+
+ALTER TABLE temp_country ALTER COLUMN deleted_by TYPE bigint USING deleted_by::bigint;
+
+--ALTER TABLE temp_country ALTER COLUMN deleted_by SET DEFAULT 0;
+
+ALTER TABLE temp_country DROP CONSTRAINT IF EXISTS country_deleted_by_fkey;
+
+--ALTER TABLE temp_country ADD CONSTRAINT country_deleted_by_fkey
+--    FOREIGN KEY (deleted_by)
+--    REFERENCES users (id)
+--    ON UPDATE NO ACTION
+--    ON DELETE NO ACTION;
+
+ALTER TABLE temp_country
+ADD COLUMN IF NOT EXISTS x_updated_at TIMESTAMPTZ,
+ADD COLUMN IF NOT EXISTS x_sync_at TIMESTAMPTZ;
+
+</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>800</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
