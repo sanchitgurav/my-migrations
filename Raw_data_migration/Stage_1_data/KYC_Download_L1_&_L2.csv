@@ -1,0 +1,531 @@
+Type,NDML Code,Description,OKRA Code
+Proof of Identity,1,UID,2
+,2,PASSPORT,3
+,3,VOTER ID CARD,5
+,4,DRIVING LICENSE,4
+,5,PAN,1
+,6,ID ISSUED BY CENTRAL STATE GOVERNMENT,6
+,7,ID ISSUED BY STATUTORY REGULATORY AUTHORITIES,7
+,8,ID CARD WITH PHOTO ISSUED BY PUBLIC SECTOR UNDERTAKINGS,8
+,9,ID CARD WITH PHOTO ISSUED BY SCHEDULED COMMERCIAL BANKS,9
+,10,ID ISSUED BY PUBLIC FINANCIAL INSTITUTION,10
+,11,ID ISSUED BY COLLEGE AFFILIATED TO UNIVERSITIES,11
+,12,ID ISSUED BY PROFESSIONAL BODIES SUCH AS ICAI ICWAI ICSI BAR COUNCIL ETC,12
+,13,CREDIT OR DEBIT CARD ISSUED BY BANKS,13
+Proof of Address,1,PASSPORT,1
+,2,VOTER ID CARD,6
+,3,RATION CARD,7
+,4,REGISTERED LEASE OR SALE AGREEMENT OF RESIDENCE,8
+,5,DRIVING LICENSE,2
+,6,FLAT MAINTENANCE BILL,13
+,7,INSURANCE COPY,14
+,8,LANDLINE TELEPHONE/ELECTRICITY/GAS BILL,9
+,8,Latest Electricity Bill,10
+,8,Gas Bill,11
+,9,Latest Bank Passbook,3
+,9,BANK ACCOUNT STATEMENT/PASSBOOK,4
+,10,Self-Declaration by High Court / Supreme Court Judge,15
+,11,Proof of Address issued by Scheduled Commercial Banks / Scheduled Co-operative Banks / Multinational Foreign banks.,17
+,12,Proof of Address issued by Gazetted Officer,22
+,13,Proof of Address issued by Notary Public,21
+,14,Proof of Address issued by Elected representatives to the Legislative Assembly,18
+,15,Proof of Address issued by Parliament,19
+,16,Registration Certificate issued under Shops and Establishments Act,12
+,16,Proof of Address issued by any Government / Statutory Authority,20
+,17,ID Card with address issued by Central / State Government,23
+,18,ID Card with address issued by Statutory / Regulatory Authorities,24
+,19,ID Card with address issued by Public Sector Undertakings,25
+,20,ID Card with address issued by Scheduled Commercial Banks,26
+,21,ID Card with address issued by Public Financial Institutions,27
+,22,ID Card with address issued by Colleges affiliated to universities,28
+,23,"ID Card issued by Professional Bodies such as ICAI, ICWAI, ICSI, Bar Council, etc. to their members",29
+,24,Power of Attorney given by FII/sub-account to the Custodians (which are duly notarised and/or apostilled or consularised) giving registered address.,16
+,24,Power Of Attorney given by FII/sub-account to Custodian (duly notarized and/or apostilled or consularised) giving registered address,16
+,25,Proof of address in the name of the spouse,??
+,26,UNIQUE IDENTIFICATION NUMBER(ADHAAR),31
+,99,Others,??
+,??,Latest Demat Account Statement,5
+KYC modes,0,Normal KYC,00 with or without prefix 0?
+,1,eKYC with OTP,1
+,2,eKYC with Biometric,2
+,3,Online KYC,3
+,4,eKYC offline,4
+,5,Digilocker KYC,5
+,6,Saral KYC,6
+Nationality,1,Indian,1
+,99,Other (please specify),2
+Politically Exposed Person (PEP),0,Not Applicable,NA
+,1,PEP,PEP
+,2,Related to a PEP,RPEP
+"Occupation
+(Individual)",1,Public Sector,2
+,2,Private Sector,1
+,3,Government Service,10
+,4,Business,3
+,5,Professional,4
+,6,Agriculturist,5
+,7,Retired,6
+,8,Housewife,7
+,9,Student,8
+,99,Others (please specify),99
+State,1,Andaman & Nicobar Islands,35
+,2,Andhra Pradesh,28
+,3,Arunachal Pradesh,12
+,4,Assam,13
+,5,Bihar,10
+,6,Chandigarh,4
+,7,Dadra & Nagar Haveli,26
+,8,Daman & Diu,25
+,9,Delhi,7
+,10,Goa,30
+,11,Gujarat,24
+,12,Haryana,6
+,13,Himachal Pradesh,2
+,14,Jammu & Kashmir,1
+,15,Karnataka,29
+,16,Kerala,32
+,17,Lakshadweep,31
+,18,Madhya Pradesh,23
+,19,Maharashtra,27
+,20,Manipur,14
+,21,Meghalaya,17
+,22,Mizoram,15
+,23,Nagaland,18
+,24,Orissa,21
+,25,Pondicherry,34
+,26,Punjab,3
+,27,Rajasthan,8
+,28,Sikkim,11
+,29,Tamil Nadu,33
+,30,Tripura,16
+,31,Uttar Pradesh,9
+,32,West Bengal,19
+,33,Chhattisgarh,22
+,34,Uttaranchal,5
+,35,Jharkhand,20
+,36,Telangana,37
+,37,Ladakh,38
+,99,Others (please specify),99
+Country,1,AFGHANISTAN,1
+,2,ALBENIA,3
+,3,ALGERIA,4
+,4,ANGOLA,7
+,5,ARGENTINA,11
+,6,ARMENIA,12
+,7,ARUBA,13
+,8,AUSTRALIA,14
+,9,AUSTRIA,15
+,10,AZARBAIJAN,16
+,11,BAHAMAS,17
+,12,BAHRAIN,18
+,13,BANGLADESH,19
+,14,BARBADOS,20
+,15,BELARUS,21
+,16,BELGIUM,22
+,17,BELIZE,23
+,18,BENIN,24
+,19,BERMUDA,25
+,20,BHUTAN,26
+,21,BOLIVIAN,27
+,22,BOSNIA-HERZEGOVINA,28
+,23,BOTSWANA,29
+,24,BRAZIL,31
+,25,BRUNEI,25
+,26,BULGARIA,34
+,27,BURKINA FASO,35
+,28,BURUNDI,36
+,29,CAMEROON REPUBLIC,#N/A
+,30,CANADA,39
+,31,CAPE VERDE,40
+,32,CAYMAN ISLANDS,41
+,33,CENTRAL AFRICAN REPUBLIC,42
+,34,CHAD,43
+,35,CHILE,44
+,36,CHINA,45
+,37,COLOMBIA,48
+,38,COMBODIA,37
+,39,COMOROS,38
+,40,CONGO,50
+,41,COOK ISLANDS,52
+,42,COSTA RICA,53
+,43,COTE D'IVOIRE,54
+,44,CROATIA,55
+,45,CUBA,56
+,46,CYPRUS,57
+,47,CZECH REPUBLIC,58
+,48,DENMARK,59
+,49,DJIBOUTI,60
+,50,DOMINICA,61
+,51,DOMINICAN REPUBLIC,62
+,52,EAST TIMOR,#N/A
+,53,ECUADOR,63
+,54,EGYPT,64
+,55,EL SALVADOR,65
+,56,EQUATORIAL GUINEA,66
+,57,ESTONIA,68
+,58,ETHIOPIA,69
+,59,FALKLAND ISLANDS,#N/A
+,60,FIJI,72
+,61,FINLAND,73
+,62,FRANCE,74
+,63,FRENCH GUIANA,75
+,64,FRENCH POLYNESIA,76
+,65,GABON,78
+,66,GAMBIA,79
+,67,GEORGIA,80
+,68,GERMANY,81
+,69,GHANA,82
+,70,GIBRALTOR,83
+,71,GREECE,84
+,72,GREENLAND,85
+,73,GRENADA,86
+,74,GUADELOUPE,87
+,75,GUAM,88
+,76,GUATEMALA,89
+,77,GUERNSEY,90
+,78,GUINEA,91
+,79,GUINEA-BISSAU,92
+,80,GUYANA,93
+,81,HAITI,94
+,82,HONDURAS,97
+,83,HONGKONG,98
+,84,ICELAND,100
+,85,INDIA,101
+,86,INDONESIA,102
+,87,IRAN,103
+,88,IRAQ,104
+,89,IRELAND,105
+,90,ISRAEL,107
+,91,ITALY,108
+,92,JAMAICA,109
+,93,JAPAN,110
+,94,JORDAN,112
+,95,KAZAKSTAN,113
+,96,KENYA,114
+,97,KUWAIT,118
+,98,KYRGYZSTAN,119
+,99,LAOS,#N/A
+,100,LATVIA,121
+,101,LEBANON,122
+,102,LESOTHO,123
+,103,LIBERIA,124
+,104,LIBYA,125
+,105,LITHUANIA,127
+,106,LUXEMBOURG,128
+,107,MACAU,129
+,108,MACEDONIA,130
+,109,MADAGASCAR,131
+,110,MALAWI,132
+,111,MALAYSIA,133
+,112,MALDIVES,134
+,113,MALI,135
+,114,MALTA,136
+,115,MAURITANIA,139
+,116,MAURITIUS,140
+,117,MEXICO,142
+,118,MOLDOVA,144
+,119,MONETARY AUTHORITIES,#N/A
+,120,MONGOLIA,146
+,121,MONTSERRAT,147
+,122,MOROCCA,148
+,123,MOZAMBIQUE,149
+,124,MYANMAR,150
+,125,NAMIBIA,151
+,126,NEPAL,153
+,127,NETHERLANDS,154
+,128,NETHERLANDS ANTILLES,155
+,129,NEW CALEDONIA,156
+,130,NEW ZEALAND,157
+,131,NICARAGUA,158
+,132,NIGER,159
+,133,NIGERIA,160
+,134,NO SPECIFIC COUNTRY,#N/A
+,135,NORTH KOREA,116
+,136,NORWAY,164
+,137,OMAN,165
+,138,PAKISTAN,166
+,139,PANAMA,169
+,140,PAPUA NEW GUINEA,170
+,141,PARAGUAY,171
+,142,PERU,172
+,143,PHILIPPINES,173
+,144,POLAND,175
+,145,PORTUGAL,176
+,146,QATAR,178
+,147,ROMANIA,180
+,148,RUSSIA,181
+,149,RWANDA,182
+,150,SAN TOME AND PRINCIPE,#N/A
+,151,SAUDI ARABIA,191
+,152,SENEGAL,192
+,153,SEYCHELLES,194
+,154,SINGAPORE,196
+,155,SLOVAKIA,197
+,156,SLOVENIA,198
+,157,SOLOMON ISLANDS,199
+,158,SOMALIA,200
+,159,SOUTH AFRICA,201
+,160,SOUTH KOREA,117
+,161,SPAIN,203
+,162,SRI LANKA,204
+,163,ST. HELENA,#N/A
+,164,ST. KITTS AND NEVIS,#N/A
+,165,ST. VINCENT AND GRENADINES,#N/A
+,166,ST.LUCIA,#N/A
+,167,SUDAN,205
+,168,SURINAME,206
+,169,SWAZILAND,208
+,170,SWEDEN,209
+,171,SWITZERLAND,210
+,172,SYRIA,#N/A
+,173,TAIWAN,212
+,174,TAJIKISTHAN,213
+,175,TANZANIA,214
+,176,THAILAND,215
+,177,TOGO REPUBLIC,217
+,178,TOKYO,#N/A
+,179,TONGA,219
+,180,TRINIDAD AND TOBAGO,220
+,181,TUNISIA,221
+,182,TURKEY,222
+,183,TURKMENISTAN,223
+,184,U A E,228
+,185,UGANDA,226
+,186,UNITED ARAB EMIRATES,228
+,187,UNITED KINGDOM,229
+,188,URUGUAY,232
+,189,USA,230
+,190,VANUATU,234
+,191,VENEZUELA,235
+,192,VIETNAM,236
+,193,WEST AFRICA,#N/A
+,194,WESTERN SAMOA,#N/A
+,195,YEMEN,241
+,196,YUGOSLAVIAN,#N/A
+,197,ZAIRE,#N/A
+,198,ZAMBIA,242
+,199,ZIMBABWE,243
+,200,ALAND ISLANDS,2
+,201,AMERICAN SAMOA,5
+,202,ANDORRA,6
+,203,ANGUILLA,8
+,204,ANTARCTICA,9
+,205,ANTIGUA AND BARBUDA,10
+,206,BOUVET ISLAND,30
+,207,BRITISH INDIAN OCEAN TERRITORY,32
+,208,CHRISTMAS ISLAND,46
+,209,COCOS (KEELING) ISLANDS,47
+,210,ERITREA,67
+,211,FALKLAND ISLANDS (MALVINAS),70
+,212,FAROE ISLANDS,71
+,213,FRENCH SOUTHERN TERRITORIES,77
+,214,HEARD ISLAND AND MCDONALD ISLANDS,95
+,215,HOLY SEE (VATICAN CITY STATE),96
+,216,HUNGARY,99
+,217,"IRAN, ISLAMIC REPUBLIC OF",103
+,218,ISLE OF MAN,106
+,219,KIRIBATI,115
+,220,LAO PEOPLE'S DEMOCRATIC REPUBLIC,120
+,221,LIBYAN ARAB JAMAHIRIYA,125
+,222,LIECHTENSTEIN,126
+,223,MARSHALL ISLANDS,137
+,224,MARTINIQUE,138
+,225,MAYOTTE,141
+,226,"MICRONESIA, FEDERATED STATES OF",143
+,227,MONACO,145
+,228,NAURU,152
+,229,NIUE,161
+,230,NORFOLK ISLAND,162
+,231,NORTHERN MARIANA ISLANDS,163
+,232,PALAU,167
+,233,"PALESTINIAN TERRITORY, OCCUPIED",168
+,234,PITCAIRN,174
+,235,PUERTO RICO,177
+,236,REUNION,179
+,237,SAINT HELENA,183
+,238,SAINT KITTS AND NEVIS,184
+,239,SAINT LUCIA,185
+,240,SAINT PIERRE AND MIQUELON,186
+,241,SAINT VINCENT AND THE GRENADINES,187
+,242,SAMOA,188
+,243,SAN MARINO,189
+,244,SAO TOME AND PRINCIPE,190
+,245,SERBIA AND MONTENEGRO,193
+,246,SIERRA LEONE,195
+,247,SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS,202
+,248,SVALBARD AND JAN MAYEN,207
+,249,SYRIAN ARAB REPUBLIC,211
+,250,TIMOR-LESTE,216
+,251,TOKELAU,218
+,252,TURKS AND CAICOS ISLANDS,224
+,253,TUVALU,225
+,254,UKRAINE,227
+,255,UNITED STATES MINOR OUTLYING ISLANDS,231
+,256,UZBEKISTAN,233
+,257,"VIRGIN ISLANDS, BRITISH",237
+,258,"VIRGIN ISLANDS, U.S.",238
+,259,WALLIS AND FUTUNA,239
+,260,WESTERN SAHARA,240
+"Status
+(Individual)",1,Resident Individual,R
+,2,Non-Resident,N
+,3,Foreign National,P
+,4,QFI,Q
+,5,Eligible Foreign Investor - Category III,3
+,6,Person of Indian Origin,O
+"Status
+(non-individual)",1,Private Limited Co.,1
+,2,Public Ltd. Co.,2
+,3,Body Corporate,3
+,4,Trust,5
+,5,Charities,5
+,6,NGOs,5
+,7,Bank,10
+,8,Government Body,11
+,9,Non-Government Organization,12
+,10,Defence Establishment,13
+,11,Society,15
+,12,LLP,16
+,13,Partnership,4
+,14,FI,6
+,15,FII,7
+,16,HUF,8
+,17,AOP,9
+,18,BOI,14
+,99,Others (please specify),99
+,19,FPI - Category I,18
+,20,FPI - Category II,19
+,21,FPI - Category III,20
+,23,COMPANY,21
+,22,QFI,17
+"Gross Annual Income Range
+(Individual)",1,Below Rs. 1 Lac,1
+,2,Btw Rs. 1 to Rs. 5 Lacs,2
+,3,Btw Rs. 5 to Rs. 10 Lacs,3
+,4,Btw Rs. 10 to Rs. 25 Lacs,4
+,5,More than Rs. 25 Lacs,5
+"Gross Annual Income Range
+(non-individual)",1,Below Rs. 1 Lac,1
+,2,Btw Rs. 1 to Rs. 5 Lacs,2
+,3,Btw Rs. 5 to Rs. 10 Lacs,3
+,4,Btw Rs. 10 to Rs. 25 Lacs,4
+,5,Btw Rs. 25 Lacs to Rs. 1 Crore,6
+,6,More than Rs. 1 Crore,7
+"Relationship with Applicant
+(i.e. promoters, whole time directors etc.)",1,Promoter,1
+,2,Partner,6
+,3,Karta,3
+,4,Trustee,4
+,5,Whole time Director,2
+,99,Others (please specify),5
+,6,Beneficial Owner,7
+,7,Promoter & Beneficial Owner,8
+,8,Whole Time Director & Beneficial Owner,9
+,9,Trustee & Beneficial Owner,10
+,10,Authorised Signatory & Beneficial Owner,11
+,11,Partner & Beneficial Owner,12
+,12,Director & Beneficial Owner,13
+NRI Residential Status Proof,NA,Passport,1
+,NA,PIO Card,2
+,NA,OCI Card,3
+Marital status,S,Single / Unmarried,2
+,M,Married,1
+DOCUMENT SUBMISSION DETAILS,"57 [IND]
+51 [NON-IND]",Self-Certified Copies Submitted (Originals Verified),S
+,"56 [IND]
+50 [NON-IND]",True Copies of Documents Received,T
+GNEDER,M,MALE,M
+,F,FEMALE,F
+,T,TRANSGENDER,
+,,,
+Dump type,,,
+,,,
+Code,Description,,
+I,Incremental,,
+F,Full Download,,
+P,Partial Download,,
+E,EOD,,
+S,Solicited,,
+U,Unsolicited,,
+,,,
+Father/spouse indicator,,,
+,,,
+F,Father,,
+S,Spouse,,
+,,,
+Applicant prefix,,,
+,,,
+1,MR,,
+2,MISS,,
+3,MRS,,
+,,,
+KYC status,,,
+,,,
+Code,Description,,
+1,UNDER_PROCESS,,
+2,KYC REGISTERED,,
+3,ON HOLD,,
+4,KYC REJECTED,,
+5,NOT AVAILABLE,,
+6,Deactivate,,
+12,KYC REGISTERED,,
+11,UNDER_PROCESS,,
+13,ON HOLD,,
+14,KYC REJECTED,,
+21,Mutual Fund under process,,
+22,Mutual Fund verified,,
+7,VALIDATED,,
+,,,
+PAN exempt category,,,
+,,,
+Code,Description,,
+1,SIKKIM Resident,,
+2,Transactions carried out on behalf of STATE GOVT,,
+3,Transactions carried out on behalf of CENTRAL GOVT,,
+4,COURT APPOINTED OFFICIALS,,
+5,UN Entity/Multilateral agency exempt from paying tax in India,,
+6,Official Liquidator,,
+7,Court Receiver,,
+8,"SIP of Mutual Funds Upto Rs. 50,000/- p.a.",,
+,,,
+Entity type,,,
+,,,
+Code,Description,,
+I,Individual,,
+N,Non-Individual,,
+,,,
+KYC Update Type,,,
+,,,
+Code,Description,,
+1,New,,
+2,Modify with documents,,
+3,Modify without documents,,
+4,Delete,,
+5,Suspended,,
+6,Deceased,,
+,,,
+Additional KYC Update Type,,,
+,,,
+Code,Description,,
+1,New,,
+2,Modify with documents,,
+3,Modify without documents,,
+4,Dump,,
+,,,
+IPV,,,
+,,,
+Code,Description,,
+Y,Yes,,
+N,No,,
+E,"Exempted
+Applicable only in case of MF investment less than 50000/Year/AMC. For the Individual only",,
+,,,
+Update Type,,,
+,,,
+Code,Description,,
+IE,Intermediary Inquiry,,
+IS,Intermediary Download/Fetch,,
+II,Intermediary Modification,,
+RE,Registrar Inquiry,,
+RS,Registrar Download/Fetch,,
+RI,Registrar Modification,,

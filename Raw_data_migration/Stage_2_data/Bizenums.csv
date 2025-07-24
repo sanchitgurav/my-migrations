@@ -1,0 +1,291 @@
+id,class_type,code,okracode,description,seq,sname,extra_info,v1_code
+1,APPLICANTTYPE,1,1,Individual,1,I,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+2,APPLICANTTYPE,2,2,Nonindividual,2,NI,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+3,ADDRTYPE,1,1,Communication,1,Comm,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+4,ADDRTYPE,2,2,Permanent,2,Perm,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+5,RELATIONS_IND,1,1,Father,1,father,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+6,RELATIONS_IND,2,2,Mother,2,mother,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+7,RELATIONS_IND,3,3,Spouse,3,spouse,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+8,RELATIONS_IND,4,4,Sister,4,sister,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+9,RELATIONS_IND,5,5,Brother,5,brother,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+10,RELATIONS_IND,6,6,Husband,6,husband,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+11,RELATIONS_IND,7,7,Wife,7,wife,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+12,RELATIONS_IND,8,8,Guardian,8,guardian,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+13,RELATIONS_NIND,1,1,Promoter,1,Promoter,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+14,RELATIONS_NIND,2,2,Partner,2,Partner,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+15,RELATIONS_NIND,3,3,Karta,3,Karta,"{""cmt_srl_num"": ""2"", ""cmt_attr_key"": ""POSKARTATYPE"", ""cmt_drpdwn_key"": ""POSKARTATYPE""}",NULL
+16,RELATIONS_NIND,4,4,Trustee,4,Trustee,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+17,RELATIONS_NIND,5,5,Whole Time Director,5,Whole Time Director,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+18,RELATIONS_NIND,6,6,Beneficial Owner,6,Beneficial Owner,"{""cmt_srl_num"": ""1436"", ""cmt_attr_key"": ""MIKARTATYPE"", ""cmt_drpdwn_key"": ""MIKARTATYPE""}",NULL
+19,RELATIONS_NIND,7,7,Promoter & Beneficial Owner,7,Promoter & Beneficial Owner,"{""cmt_srl_num"": ""1437"", ""cmt_attr_key"": ""MIKARTATYPE"", ""cmt_drpdwn_key"": ""MIKARTATYPE""}",NULL
+20,RELATIONS_NIND,8,8,Whole Time Director & Beneficial Owner,8,Whole Time Director & Beneficial Owner,"{""cmt_srl_num"": ""1438"", ""cmt_attr_key"": ""MIKARTATYPE"", ""cmt_drpdwn_key"": ""MIKARTATYPE""}",NULL
+21,RELATIONS_NIND,9,9,Trustee & Beneficial Owner,9,Trustee & Beneficial Owner,"{""cmt_srl_num"": ""1439"", ""cmt_attr_key"": ""MIKARTATYPE"", ""cmt_drpdwn_key"": ""MIKARTATYPE""}",NULL
+22,RELATIONS_NIND,10,10,Authorised Signatory & Beneficial Owner,10,Authorised Signatory & Beneficial Owner,"{""cmt_srl_num"": ""1440"", ""cmt_attr_key"": ""MIKARTATYPE"", ""cmt_drpdwn_key"": ""MIKARTATYPE""}",NULL
+23,RELATIONS_NIND,11,11,Partner & Beneficial Owner,11,Partner & Beneficial Owner,"{""cmt_srl_num"": ""1441"", ""cmt_attr_key"": ""MIKARTATYPE"", ""cmt_drpdwn_key"": ""MIKARTATYPE""}",NULL
+24,RELATIONS_NIND,12,12,Director & Beneficial Owner,12,Director & Beneficial Owner,"{""cmt_srl_num"": ""1442"", ""cmt_attr_key"": ""MIKARTATYPE"", ""cmt_drpdwn_key"": ""MIKARTATYPE""}",NULL
+25,RELATIONS_NIND,99,13,Others (please specify),13,Others (please specify),"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+26,AADHAAR_SEEDING_STATUS,1,1,Operative PAN - Positive case,1,Y,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+27,AADHAAR_SEEDING_STATUS,2,2,Inoperative PAN - Negative case,2,N,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+28,AADHAAR_SEEDING_STATUS,3,3,Only for Non-Individuals - Positive case,3,NA,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+29,OCCUPATION_IND,1,1,Public Sector,1,Public Sector,"{""cmt_srl_num"": ""54"", ""cmt_attr_key"": ""MIOCCUPATION"", ""cmt_drpdwn_key"": ""MIOCCUPATION""}",NULL
+30,OCCUPATION_IND,2,2,Private Sector,2,Private Sector,"{""cmt_srl_num"": ""53"", ""cmt_attr_key"": ""MIOCCUPATION"", ""cmt_drpdwn_key"": ""MIOCCUPATION""}",NULL
+31,OCCUPATION_IND,3,3,Government Service,3,Government Service,"{""cmt_srl_num"": ""55"", ""cmt_attr_key"": ""MIOCCUPATION"", ""cmt_drpdwn_key"": ""MIOCCUPATION""}",NULL
+32,OCCUPATION_IND,4,4,Business,4,Business,"{""cmt_srl_num"": ""56"", ""cmt_attr_key"": ""MIOCCUPATION"", ""cmt_drpdwn_key"": ""MIOCCUPATION""}",NULL
+33,OCCUPATION_IND,5,5,Professional,5,Professional,"{""cmt_srl_num"": ""57"", ""cmt_attr_key"": ""MIOCCUPATION"", ""cmt_drpdwn_key"": ""MIOCCUPATION""}",NULL
+34,OCCUPATION_IND,6,6,Agriculturist,6,Agriculturist,"{""cmt_srl_num"": ""58"", ""cmt_attr_key"": ""MIOCCUPATION"", ""cmt_drpdwn_key"": ""MIOCCUPATION""}",NULL
+35,OCCUPATION_IND,7,7,Retired,7,Retired,"{""cmt_srl_num"": ""59"", ""cmt_attr_key"": ""MIOCCUPATION"", ""cmt_drpdwn_key"": ""MIOCCUPATION""}",NULL
+36,OCCUPATION_IND,8,8,Housewife,8,Housewife,"{""cmt_srl_num"": ""60"", ""cmt_attr_key"": ""MIOCCUPATION"", ""cmt_drpdwn_key"": ""MIOCCUPATION""}",NULL
+37,OCCUPATION_IND,9,9,Student,9,Student,"{""cmt_srl_num"": ""1623"", ""cmt_attr_key"": ""TIN_EXEMPT_REASON"", ""cmt_drpdwn_key"": ""TIN_EXEMPT_REASON""}",NULL
+38,OCCUPATION_IND,99,10,Others (please specify),10,Others (please specify),"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+39,PAN_EXEMPT,0,9,Not Exempted,1,notexempted,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+40,PAN_EXEMPT,1,1,Sikkim residents,2,sikkimres,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+41,PAN_EXEMPT,2,2,Transaction carried out on behalf of state govt,3,stategovttxn,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+42,PAN_EXEMPT,3,3,Transactions carried out on behalf of central govt,4,centralgovttxn,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+43,PAN_EXEMPT,4,4,Court appointed officials,5,courtofficials,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+44,PAN_EXEMPT,5,5,UN entity / multi-lateral agency exempt from paying tax in India,6,unmlagency,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+45,PAN_EXEMPT,6,6,Official liquidator,7,officialliquidator,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+46,PAN_EXEMPT,7,7,Court receiver,8,courtreceiver,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+47,PAN_EXEMPT,8,8,"SIP of mutual funds up to INR 50,000 per annum",9,sipmutualfunds,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+48,KYCTYPE,5,1,Digilocker KYC,1,Digilocker,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",5
+49,KYCTYPE,3,2,Digital KYC,2,Digital,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",3
+50,KYCTYPE,4,3,eKYC offline,3,Ekycoffline,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",4
+51,KYCTYPE,2,4,eKYC with biometric,4,Ekycbio,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",2
+52,KYCTYPE,1,5,eKYC with OTP,5,Ekycotp,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",1
+53,KYCTYPE,0,6,Normal KYC,6,Normalkyc,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",0
+54,KYCTYPE,6,7,SARAL KYC,7,Saralkyc,"{""cmt_srl_num"": ""1616"", ""cmt_attr_key"": ""MIEKYCTYPE"", ""cmt_drpdwn_key"": ""MIEKYCTYPE""}",6
+55,MARITAL_STATUS,1,1,Married,1,Married,"{""cmt_srl_num"": ""1223"", ""cmt_attr_key"": ""MIMARITALSTATUS"", ""cmt_drpdwn_key"": ""MIMARITALSTATUS""}",M
+56,MARITAL_STATUS,2,2,Single,2,Single,"{""cmt_srl_num"": ""1222"", ""cmt_attr_key"": ""MIMARITALSTATUS"", ""cmt_drpdwn_key"": ""MIMARITALSTATUS""}",S
+57,MARITAL_STATUS,3,3,Widow,3,Widow,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+58,MARITAL_STATUS,4,4,Divorcee,4,Divorcee,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+59,MARITAL_STATUS,5,5,Not Disclosed,5,Not Disclosed,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+60,PEP,1,1,Politically exposed person,1,PEP,"{""cmt_srl_num"": ""234"", ""cmt_attr_key"": ""MIPEPIND"", ""cmt_drpdwn_key"": ""MIPEPIND""}",1
+61,PEP,2,2,Related to PEP,2,RPEP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",2
+62,PEP,0,3,Not Applicable,2,NA,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",3
+63,APPLICANTSTATUS,0,1,Partially Captured,1,partially_captured,"{""cmt_srl_num"": ""96"", ""cmt_attr_key"": ""MIINSTRUCTIONSTATUS"", ""cmt_drpdwn_key"": ""MIINSTRUCTIONSTATUS""}",0
+64,APPLICANTSTATUS,1,2,Captured,2,captured,"{""cmt_srl_num"": ""97"", ""cmt_attr_key"": ""MIINSTRUCTIONSTATUS"", ""cmt_drpdwn_key"": ""MIINSTRUCTIONSTATUS""}",1
+65,APPLICANTSTATUS,2,3,Cancelled,3,cancelled,"{""cmt_srl_num"": ""98"", ""cmt_attr_key"": ""MIINSTRUCTIONSTATUS"", ""cmt_drpdwn_key"": ""MIINSTRUCTIONSTATUS""}",2
+66,APPLICANTSTATUS,3,4,Pending with KRA,4,pending_with_kra,"{""cmt_srl_num"": ""99"", ""cmt_attr_key"": ""MIINSTRUCTIONSTATUS"", ""cmt_drpdwn_key"": ""MIINSTRUCTIONSTATUS""}",3
+67,APPLICANTSTATUS,4,5,KYC Registered,5,registered,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+68,APPLICANTSTATUS,5,6,Rejected by KRA,6,rejected,"{""cmt_srl_num"": ""449"", ""cmt_attr_key"": ""STATUSBYKRA"", ""cmt_drpdwn_key"": ""STATUSBYKRA""}",5
+69,APPLICANTSTATUS,6,7,On Hold,7,onhold,"{""cmt_srl_num"": ""448"", ""cmt_attr_key"": ""STATUSBYKRA"", ""cmt_drpdwn_key"": ""STATUSBYKRA""}",6
+70,APPLICANTSTATUS,7,8,Sent to Other KRA,8,sent2okra,"{""cmt_srl_num"": ""730"", ""cmt_attr_key"": ""MIINSTRUCTIONSTATUS"", ""cmt_drpdwn_key"": ""MIINSTRUCTIONSTATUS""}",NULL
+71,APPLICANTSTATUS,8,9,With Other KRA,9,with_other_kra,"{""cmt_srl_num"": ""1210"", ""cmt_attr_key"": ""MIINSTRUCTIONSTATUS"", ""cmt_drpdwn_key"": ""MIINSTRUCTIONSTATUS""}",NULL
+72,APPLICANTSTATUS,9,10,KRA Maker Verified,10,kra_maker_verified,"{""cmt_srl_num"": ""1266"", ""cmt_attr_key"": ""KRAINSTRUCTIONSTATUS"", ""cmt_drpdwn_key"": ""KRAINSTRUCTIONSTATUS""}",NULL
+73,APPLICANTSTATUS,10,11,KYC Deactivated,11,deactivated,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",10
+74,APPLICANTSTATUS,11,12,KYC Validated,12,validated,"{""cmt_srl_num"": ""1574"", ""cmt_attr_key"": ""KRAINSTRUCTIONSTATUS"", ""cmt_drpdwn_key"": ""KRAINSTRUCTIONSTATUS""}",11
+75,GENDER,1,1,Male gender,1,Male,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",M
+76,GENDER,2,2,Female gender,2,Female,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",F
+77,GENDER,3,3,Transgender gender,3,Trans,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+78,GENDER,4,4,Gender not disclosed,4,Not disclosed,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+79,RESI_STATUS_IND,1,1,Resident Individual,1,Resident Individual,"{""cmt_srl_num"": ""230"", ""cmt_attr_key"": ""MIINDISTATUS"", ""cmt_drpdwn_key"": ""MIINDISTATUS""}",1
+80,RESI_STATUS_IND,2,2,Non Resident,2,Non Resident,"{""cmt_srl_num"": ""231"", ""cmt_attr_key"": ""MIINDISTATUS"", ""cmt_drpdwn_key"": ""MIINDISTATUS""}",2
+81,RESI_STATUS_IND,3,3,Foreign National,3,Foreign National,"{""cmt_srl_num"": ""232"", ""cmt_attr_key"": ""MIINDISTATUS"", ""cmt_drpdwn_key"": ""MIINDISTATUS""}",3
+82,RESI_STATUS_NIND,12,12,LLP,15,LLP,"{""cmt_srl_num"": ""74"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",12
+83,RESI_STATUS_NIND,14,14,FI,17,FI,"{""cmt_srl_num"": ""76"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",14
+84,RESI_STATUS_NIND,15,15,FII,18,FII,"{""cmt_srl_num"": ""77"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",15
+85,RESI_STATUS_NIND,16,16,HUF,19,HUF,"{""cmt_srl_num"": ""78"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",16
+86,RESI_STATUS_NIND,17,17,AOP,20,AOP,"{""cmt_srl_num"": ""79"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",17
+87,RESI_STATUS_NIND,18,18,BOI,21,BOI,"{""cmt_srl_num"": ""80"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",18
+88,TINREASON,1,1,Student,1,Student,"{""cmt_srl_num"": ""1623"", ""cmt_attr_key"": ""TIN_EXEMPT_REASON"", ""cmt_drpdwn_key"": ""TIN_EXEMPT_REASON""}",1
+89,TINREASON,2,2,Home-maker,2,Home-maker,"{""cmt_srl_num"": ""1624"", ""cmt_attr_key"": ""TIN_EXEMPT_REASON"", ""cmt_drpdwn_key"": ""TIN_EXEMPT_REASON""}",2
+90,TINREASON,3,3,House-Wife,3,House-Wife,"{""cmt_srl_num"": ""1625"", ""cmt_attr_key"": ""TIN_EXEMPT_REASON"", ""cmt_drpdwn_key"": ""TIN_EXEMPT_REASON""}",3
+91,TINREASON,4,4,Retired,4,Retired,"{""cmt_srl_num"": ""59"", ""cmt_attr_key"": ""MIOCCUPATION"", ""cmt_drpdwn_key"": ""MIOCCUPATION""}",4
+92,TINREASON,5,5,Diplomat,5,Diplomat,"{""cmt_srl_num"": ""1627"", ""cmt_attr_key"": ""TIN_EXEMPT_REASON"", ""cmt_drpdwn_key"": ""TIN_EXEMPT_REASON""}",5
+93,TINREASON,6,6,TIN Not Eligible as of now / NA,6,TIN Not Eligible as of now / NA,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",6
+94,ONHOLDREASON,2,0,Blank KYC form provided,2,BKFP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+95,ONHOLDREASON,3,0,Details mismatch as per ITD: Name is not matching as per ITD status.,3,ITDNMIS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+96,ONHOLDREASON,4,0,Details mismatch as per ITD: Name is not matching as per ITD status./DOB is not matching as per ITD status.,4,NMDOBITDMIS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+97,ONHOLDREASON,5,0,Details mismatch as per ITD: DOB is not matching as per ITD status.,5,DOBITDMIS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+98,ONHOLDREASON,6,0,Wrong POA selected by MI,6,WPOA,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+99,ONHOLDREASON,7,0,DOCUMENT PDF CORRUPTED,7,DPC,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+100,ONHOLDREASON,8,0,"STATUS MISMATCH WITH KRA SYSTEM,MEMORANDUM OF ASSOCIATION NOT PROVIDED",8,SMISKRA,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+101,ONHOLDREASON,9,0,"AADHAR CARD NOT BLACKOUT,INVALID KYC FROM PROVIDED",9,ACNB,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+102,ONHOLDREASON,10,0,"Pan not seeded with Aadhar, KYC not validated with source(UIDAI)",10,PNS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+103,ONHOLDREASON,11,0,Pan not seeded with Aadhar,11,PNSWA,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+104,ONHOLDREASON,12,0,KARTA DETAILS NOT CAPTURED IN KRA SYSTEM,12,KDNCIKS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+105,ONHOLDREASON,13,0,PLACE OF INCORPORATION NOT MENTIONED ON KYC FROM,13,POINMOKF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+106,ONHOLDREASON,14,0,KARTA DETAILS NOT CAPTURED,14,KDNC,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+107,ONHOLDREASON,15,0,PHONE NUMBER AND EMAIL ID NOT MENTIONED ON KYC FORM,15,PNAEINMOKF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+108,ONHOLDREASON,16,0,"ADDRESS ,EMAIL ID NOT MENTIONED ON KYC FORM AND POA NOT PROVIDED",16,AEINM,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+109,ONHOLDREASON,17,0,PIN CODE NOT MENTION ON KYC FORM,17,PCNM,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+110,ONHOLDREASON,18,0,EMAIL ID MISMATCHED WITH KRA SYSTEM AND QRCF,18,EIMIS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+111,ONHOLDREASON,19,0,WRONG KYC MODE SELECTED BY MI,19,WKMBS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+112,ONHOLDREASON,20,0,KYC NOT VALIDATED WITH SOURCE(UIDAI),20,KNVWSU,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+113,ONHOLDREASON,21,0,DOB MISMATCH WITH KRA SYSTEM AND PIN CODE NOT MENTION ON KYC FORM,21,DMWISPNM,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+114,ONHOLDREASON,22,0,AADHAR NOT BLACKED OUT BY MI AND QRCF,22,ANBOBMAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+115,ONHOLDREASON,23,0,INCOMPLETE KYC FORM PROVIDED AND POA NOT PROVIDED,23,IKFPAPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+116,ONHOLDREASON,24,0,APPLICANT NAME MISMATCH WITH KRA SYSTEM,24,ANMWKS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+117,ONHOLDREASON,25,0,KYC FORM NOT VISIBLE AND POA NOT PROVIDED,25,KFNVAPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+118,ONHOLDREASON,26,0,ADDRESS NOT MENTIONED ON KYC FORM AND POA NOT PROVIDED,26,ANMOKFPANP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+119,ONHOLDREASON,27,0,POA NOT PROVIDED,27,PNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+120,ONHOLDREASON,28,0,KYC FORM PROVIDED IS INCOMPLETE,28,KFPISI,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+121,ONHOLDREASON,29,0,AADHAR NUMBER NOT PROPERLY BLACKOUT,29,ANNPB,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+122,ONHOLDREASON,30,0,FATHER/S/SPOUSE NAME MISMATCH WITH KRA SYSTEM,30,FSNMWKS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+123,ONHOLDREASON,31,0,FATHER NAME MISMATCH WITH KRA SYSTEM,31,FNMKWS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+124,ONHOLDREASON,32,0,FATHER NAME MISMATCHED WITH KRA SYSTEM AND QRCF,32,FNMWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+125,ONHOLDREASON,33,0,"MARITAL STATUS NOT MENTION ON KYC FORM, AADHAR NUMBER NOT PROPERLY BLACKOUT",33,MSNMOKFANNPB,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+126,ONHOLDREASON,34,0,MARITAL STATUS MISMATCH WITH KRA SYSTEM,34,MSMWKS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+127,ONHOLDREASON,35,0,"PROOF OF CORRESPONDENCE ADDRESS NOT PROVIDED, QRCF",35,POCANPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+128,ONHOLDREASON,36,0,"AADHAR NUMBER NOT BLACKOUT IN INTERMEDIARY, QRCF",36,ANNBIQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+129,ONHOLDREASON,37,0,FATHER NAME MISMATCH WITH KRA SYSTEM,37,FNMKWS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+130,ONHOLDREASON,38,0,PROOF OF CORRESPONDENCE ADDRESS NOT PROVIDED,38,POCANP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+131,RESI_STATUS_NIND,13,13,Partnership,16,P,"{""cmt_srl_num"": ""75"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",13
+132,ONHOLDREASON,39,0,"PINCODE MISMATCH WITH KRA SYSTEM, QRCF",39,PMWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+133,ONHOLDREASON,40,0,AADHAR NUMBER NOT BLACKOUT IN INTERMEDIARY,40,ANNBI,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+134,ONHOLDREASON,41,0,PLACE OF INCORPORATION MISMATCH,41,POIM,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+135,ONHOLDREASON,42,0,PLACE OF INCORPORATION MISMATCH WITH KRA SYSTEM,42,POIMWK,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+136,ONHOLDREASON,43,0,KYC FORM PROVIDED IN ANOTHER PERSON WITH KRA SYSTEM,43,KFPAPWK,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+137,ONHOLDREASON,44,0,PROOF OF CORRESPONDENCE ADDRESS PROVIDED IS NOT CLEAR,44,POCAPINC,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+138,ONHOLDREASON,45,0,EMAIL ID NOT MENTIONED ON KYC FORM AND QRCF,45,EINMOKFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+139,ONHOLDREASON,46,0,INCOMPLETE EMAIL ID CAPTURED ON KYC FORM,46,IEIDCOF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+140,ONHOLDREASON,47,0,INVALID POA PROVIDED,47,IPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+141,ONHOLDREASON,48,0,INCOMPLETE EMAIL ID CAPTURED ON KYC FORM AND QRCF,48,IEIDCOFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+142,ONHOLDREASON,49,0,AADHAR NOT BLACKOUT BY MI AND QRCF,49,ANBBMAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+143,ONHOLDREASON,50,0,ADDRESS NOT MENTION ON KYC FORM AND POA NOT PROVIDED,50,ANMOKFAPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+144,ONHOLDREASON,51,0,"ADDRESS, EMAIL ID NOT MENTION ON KYC FORM",51,AEINMOKF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+145,ONHOLDREASON,52,0,INCOMPLETE KYC FORM PROVIDED AND POA NOT PROVIDED,52,IKFAPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+146,ONHOLDREASON,53,0,"ADDRESS, PHONE NUMBER NOT MENTIONED ON KYC FORM AND POA NOT PROVIDED",53,APNNMOKFAPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+147,ONHOLDREASON,54,0,RESIDENTIAL STATUS NOT MENTIONED ON KYC FORM AND QRCF,54,RSNMOKFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+148,ONHOLDREASON,55,0,CITY MISMATCHED WITH KRA SYSTEM AND WRONG KYC MODE SELECTED BY MI,55,CMWKSAWKMSBM,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+149,ONHOLDREASON,56,0,PINCODE MISMATCHED WITH KRA SYSTEM AND WRONG KYC MODE SELECTED BY MI,56,PMWKSAWKMSBM,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+150,ONHOLDREASON,57,0,ADDRESS NOT MENTIONED ON KYC FORM AND QRCF,57,ANMOKFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+151,ONHOLDREASON,58,0,STATE MISMATCHED WITH KRA SYSTEM AND QRCF,58,SMWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+152,ONHOLDREASON,59,0,MARITAL STATUS NOT MENTIONED ON KYC FORM AND POA NOT PROVIDED,59,MSNMOKFAPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+153,ONHOLDREASON,60,0,"MEMORANDUM OF ASSOCIATION NOT PROVIDED, ARTICLES OF ASSOCIATION NOT PROVIDED, BOARD RESOLUTION FOR INVESTMENT IN SECURITIES MARKET NOT PROVIDED, AUTHORISED SIGNATORIES LIST WITH SPECIMEN SIGN",60,MOANPAANP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+154,ONHOLDREASON,61,0,ADDRESS NOT MENTIONED ON KYC FORM POA NOT PROVIDED,61,ANMOKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+155,ONHOLDREASON,62,0,INCOMPLETE POA PROVIDED AND QRCF,62,IPPAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+156,ONHOLDREASON,63,0,STATE NOT MENTIONED ON KYC FORM AND INVALID POA PROVIDED,63,SNMOKFAIPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+157,ONHOLDREASON,64,0,PHONE NUMBER MISMATCHED WITH KRA SYSTEM AND QRCF,64,PNMWKSQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+158,ONHOLDREASON,65,0,"CITY, EMAIL ID NOT MENTION ON KYC FORM AND POA NOT PROVIDED",65,CEINMOKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+159,ONHOLDREASON,66,0,CITY NOT MENTIONED ON KYC FORM AND POA NOT PROVIDED,66,CNMOKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+160,ONHOLDREASON,67,0,"FATHER NAME, MARITAL STATUS NOT MENTION ON KYC FORM AND POA NOT PROVIDED",67,FNMSNMOKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+161,ONHOLDREASON,68,0,CITY NOT MENTION ON KYC FORM AND POA NOT PROVIDED,68,CNMOKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+162,ONHOLDREASON,69,0,"FATHER NAME, CITY MISMATCHED WITH KRA SYSTEM AND WRONG KYC MODE SELECTED BY MI",69,FNCMWKSAWKMSBMI,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+163,ONHOLDREASON,70,0,INCOMPLETED KYC FORM AND POA NOT PROVIDED,70,IKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+164,ONHOLDREASON,71,0,PHONE NUMBER NOT MENTIONED ON KYC FORM AND POA NOT PROVIDED,71,PNNMOKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+165,ONHOLDREASON,72,0,"PHONE NUMBER, CITY NAME NOT MENTION ON KYC FORM AND POA NOT PROVIDED",72,PNCNMOKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+166,ONHOLDREASON,73,0,"PHONE NUMBER, MARITAL STATUS NOT MENTION ON KYC FORM AND POA NOT PROVIDED",73,PNMSNMOKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+167,ONHOLDREASON,74,0,CITY MISMATCHED WITH KRA SYSTEM AND QRCF,74,CMWKSQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+168,ONHOLDREASON,75,0,"FATHER NAME, PHONE NUMBER NOT MENTION ON KYC FORM AND POA NOT PROVIDED",75,FNPNNMOKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+169,ONHOLDREASON,76,0,INVALID PDF PROVIDED,76,IPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+170,ONHOLDREASON,77,0,PINCODE MISMATCHED WITH KRA SYSTEM AND QRCF,77,PMWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+171,ONHOLDREASON,78,0,FATHER NAME NOT MENTIONED ON KYC FORM,78,FNNMOKF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+172,ONHOLDREASON,79,0,"FATHER NAME, ADDRESS NOT MENTIONED ON KYC FORM AND QRCF",79,FNANMOKFQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+173,ONHOLDREASON,80,0,WRONG FORM ATTACHED,80,WFA,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+174,ONHOLDREASON,81,0,PHONE NUMBER MISMATCHED WITH KRA SYSTEM AND QRCF,81,PNMWKSQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+175,ONHOLDREASON,82,0,EMAIL ID NOT MENTION ON KYC FORM AND POA NOT PROVIDED,82,EINMOKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+176,ONHOLDREASON,83,0,"MARITAL STATUS, FATHER NAME, ADDRESS NOT PROVIDED ON KYC FORM POA NOT PROVIDED",83,MSFNANPONKFPNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+177,ONHOLDREASON,84,0,INVALID POA PROVIDED,84,IPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+178,ONHOLDREASON,85,0,"ADDRESS, NOT PROVIDED ON KYC FORM AND POA NOT PROVIDED",85,ANPKFAPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+179,ONHOLDREASON,86,0,"MARITAL STATUS, ADDRESS, PHONE NUMBER NOT PROVIDED ON KYC FORM POA NOT PROVIDED",86,MSAPNNPKFPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+180,ONHOLDREASON,87,0,"FATHER NAME, ADDRESS, PHONE NUMBER NOT PROVIDED ON KYC FORM POA NOT PROVIDED",87,FNAPNNPKFPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+181,ONHOLDREASON,88,0,PLACE OF INCORPORATION NOT MENTIONED ON KYC FORM,88,POINMKF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+182,ONHOLDREASON,89,0,DOB MISMATCHED WITH KRA SYSTEM AND QRCF,89,DMWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+183,ONHOLDREASON,90,0,"APPLICANT NAME, FATHER NAME MISMATCHED WITH KRA SYSTEM AND QRCF",90,ANFNMKWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+184,ONHOLDREASON,91,0,"PHONE NUMBER, EMAIL ID NOT MENTIONED ON KYC FORM AND QRCF",91,PNEINMKFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+185,ONHOLDREASON,92,0,"STATE, FATHER NAME MISMATCHED WITH KRA SYSTEM AND QRCF",92,SFNMWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+186,ONHOLDREASON,93,0,EMAIL ID PHONE NUMBER NOT MENTIONED ON KYC FORM AND QRCF,93,EIPNNMKFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+187,ONHOLDREASON,94,0,PHONE NUMBER NOT MENTIONED ON KYC FORM AND QRCF,94,PNNMKFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+188,ONHOLDREASON,95,0,"FATHER NAME MISMATCHED WITH KRA SYSTEM, EMAIL ID, PHONE NUMBER NOT MENTIONED ON KYC FORM AND QRCF",95,FNMKWKSEIPNMKFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+189,ONHOLDREASON,96,0,EMAIL ID NOT MENTIONED ON KYC FORM,96,EINMKF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+190,ONHOLDREASON,97,0,INCOMPLETE POA PROVIDED,97,IPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+191,ONHOLDREASON,98,0,"FATHER NAME, STATE MISMATCHED WITH KRA SYSTEM AND QRCF",98,FNSMWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+192,ONHOLDREASON,99,0,"FATHER NAME MISMATCHED, EMAIL ID NOT MENTIONED ON KYC FORM AND QRCF",99,FNMEINMKFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+193,ONHOLDREASON,100,0,COUNTRY NOT MENTIONED ON KYC FORM AND QRCF,100,CNMKFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+194,ONHOLDREASON,101,0,GENDER MISMATCHED WITH KRA SYSTEM AND QRCF,101,GMWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+195,ONHOLDREASON,102,0,MARITAL STATUS NOT MENTIONED ON KYC FORM AND QRCF,102,MSNMKFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+196,ONHOLDREASON,103,0,RESIDENTIAL STATUS MISMATCHED WITH KRA SYSTEM AND QRCF,103,RSMWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+197,ONHOLDREASON,104,0,APPLICANT NAME MISMATCHED WITH KRA SYSTEM AND QRCF,104,ANMWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+198,ONHOLDREASON,105,0,ADDRESS MISMATCHED WITH KRA SYSTEM AND QRCF,105,AMWKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+199,ONHOLDREASON,106,0,PINCODE MISMATCH WITH ADDRESS PROOF,106,PMWAP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+200,ONHOLDREASON,107,0,"FATHER NAME, ADDRESS, PHONE NUMBER NOT MENTIONED ON KYC FORM AND POA NOT PROVIDED",107,FNAPNNMKFAPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+201,ONHOLDREASON,108,0,INCOMPLETE EMAIL ID CAPTURED ON KYC FORM AND POA NOT PROVIDED,108,IEICKFAPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+202,ONHOLDREASON,109,0,PHONE NUMBER NOT MENTIONED ON KYC FORM,109,PNNMKF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+203,ONHOLDREASON,110,0,CITY NOT MENTIONED ON KYC FORM AND QRCF,110,CNMKFAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+204,ONHOLDREASON,111,0,PIN CODE MISMATCHED WITH KRA SYSTEM,111,PCMWKS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+205,ONHOLDREASON,112,0,"ADDRESS, EMAIL ID NOT MENTIONED ON KYC FORM AND POA NOT PROVIDED",112,AEMKFP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+206,ONHOLDREASON,113,0,"FATHER NAME, GENDER MISMATCHED WITH KRA SYSTEM AND QRCF",113,FNGMWKSQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+207,ONHOLDREASON,114,0,"MARITAL STATUS, RESIDENTIAL STATUS, NATIONALITY AND STATE NOT MENTIONED ON KYC FORM AND QRCF",114,MSRSNANSNKFQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+208,ONHOLDREASON,115,0,"FATHER NAME, ADDRESS NOT MENTIONED ON KYC FORM AND POA NOT PROVIDED",115,FNANMKFP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+209,ONHOLDREASON,116,0,FATHER NAME NOT MENTIONED ON KYC FORM AND QRCF,116,FNMNKFPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+210,ONHOLDREASON,117,0,STATE NOT MENTIONED ON KYC FORM AND QRCF,117,SNMKFPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+211,ONHOLDREASON,118,0,STATE NOT MENTIONED ON KYC FORM AND QRCF,118,SNMKFPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+212,ONHOLDREASON,119,0,GUARDIAN DOCUMENTS NOT PROVIDED AND QRCF,119,GDNPAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+213,ONHOLDREASON,120,0,FATHER NAME MISMATCHED WITH KRA SYSTEM AND WRONG KYC MODE SELECTED BY MI,120,FNMWKSKMSB,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+214,ONHOLDREASON,121,0,PROOF CORRESPONDANCE ADDRESS NOT PROVIDED,121,PCAKNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+215,ONHOLDREASON,122,0,NATIONALITY NOT MENTIONED ON KYC FORM AND QRCF,122,NNKFPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+216,ONHOLDREASON,123,0,PHONE NUMBER AND EMAIL ID NOT MENTIONED ON KYC FORM AND,123,PNAEIKF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+217,ONHOLDREASON,124,0,EMAIL ID MISMATCHED WITH KRA SYSTEM,124,EIMWKKS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+218,ONHOLDREASON,125,0,"FATHER NAME, PINCODE MISMATCHED WITH KRA SYSTEM AND QRCF",125,FNPMWKKSQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+219,ONHOLDREASON,126,0,"EMAIL ID, FATHER NAME MISMATCHED WITH KRA SYSTEM AND QRCF",126,EIFNMWKKSQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+220,ONHOLDREASON,127,0,KYC FORM NOT PROVIDED AND QRCF,127,KFNPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+221,ONHOLDREASON,128,0,KYC FORM NOT PROVIDED,128,KFNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+222,ONHOLDREASON,129,0,"EMAIL ID, PHONE NUMBER NOT MENTIONED ON KYC FORM AND QRCF",129,EIPNNMKFPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+223,ONHOLDREASON,130,0,EMAIL ID AND PHONE NUMBER MISMATCHED WITH KRA SYSTEM AND QRCF,130,EIAPNMWKKSQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+224,ONHOLDREASON,131,0,PINCODE NOT VISIBLE ON POA,131,PNVOP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+225,ONHOLDREASON,132,0,"EMAIL ID, PHONE NUMBER NOT MENTIONED ON KYC FORM AND QRCF",132,EIPNNMKFPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+226,ONHOLDREASON,133,0,INVALID PDF PROVIDED,133,IPP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+227,ONHOLDREASON,134,0,"PHONE NUMBER, EMAIL ID NOT MENTIONED ON KYC FORM AND QRCF",134,PNEINMKFPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+228,ONHOLDREASON,135,0,"PHONE NUMBER, EMAIL ID MISMATCHED WITH KRA SYSTEM AND QRCF",135,PNEMWKKSQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+229,ONHOLDREASON,136,0,WRONG KYC FORM PROVIDED,136,WKFP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+230,ONHOLDREASON,137,0,EMAIL ID NOT CAPTURED ON KYC FORM,137,EINCKF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+231,ONHOLDREASON,138,0,EMAIL ID NOT CAPTURED ON KYC FORM AND QRCF,138,EINCKFPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+232,ONHOLDREASON,139,0,ADDRESS NOT MENTIONED ON KYC FORM,139,ANMKF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+233,ONHOLDREASON,140,0,COUNTRY NOT MENTIONED ON KYC FORM AND QRCF,140,CNMKFQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+234,ONHOLDREASON,141,0,KYC FORM NOT PROVIDED AND POA NOT PROVIDED,141,KFNPQNP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+235,ONHOLDREASON,142,0,WRONG KYC FORM PROVIDED AND QRCF,142,WKFPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+236,ONHOLDREASON,143,0,EMAIL ID NOT VISIABLE ON KYC FORM AND QRCF,143,EINVOKFQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+237,ONHOLDREASON,144,0,POA NOT VISIBLE AND QRCF,144,PNVKFQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+238,ONHOLDREASON,145,0,"PHONE NUMBER, EMAIL ID NOT MENTIONED ON KYC FORM AND QRCF",145,PNEINMKFPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+239,ONHOLDREASON,146,0,"ADDRESS, EMAIL ID NOT MENTIONED ON KYC FORM AND QRCF",146,AENINMKFPQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+240,ONHOLDREASON,147,0,"PHONE NUMBER, EMAIL ID NOT MENTIONED ON KYC FORM AND WRONG KYC MODE SELECTED BY MI",147,PNEINMKFQWKSMSB,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+241,ONHOLDREASON,148,0,KYC FORM NOT VISIBLE AND QRCF,148,KFVQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+242,ONHOLDREASON,149,0,"PHONE NUMBER, EMAIL ID MISMATCHED WITH KRA SYSTEM AND QRCF",149,PNEMWKKSQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+243,ONHOLDREASON,150,0,PINCODE MISMATCH WITH ADDRESS PROOF,150,PMWAP,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+244,ONHOLDREASON,151,0,EMAIL ID MISMATCHED WITH KRA SYSTEM AND QRCF,151,EIMKSAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+245,ONHOLDREASON,152,0,DOB NOT VISIBLE ON KYC FORM AND QRCF,152,NVOKFQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+246,ONHOLDREASON,153,0,"ADDRESS, PHONE NUMBER, EMAIL ID MISMATCHED WITH KRA SYSTEM AND QRCF",153,APNEMKRAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+247,ONHOLDREASON,154,0,DATE OF INCORPORATION NOT MENTION IN KYC FORM,154,DOINIKF,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+248,ONHOLDREASON,155,0,SEBI Validation Deadline: 310324-Email/Mobile Validation Failed,155,VD310324EMV,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",1
+249,ONHOLDREASON,156,0,Aadhaar Seeding is Unsuceessfull,156,SISU,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+250,ONHOLDREASON,157,0,Aadhar Seeding is Unsuccessful,157,SISU,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+251,ONHOLDREASON,158,0,PAN IS NOT LINKED TO AADHAR AS PER INCOME TAX DEPARTMENT,158,PINTLITD,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+252,ONHOLDREASON,159,0,Details mismatch as per ITD :PAN IS NOT LINKED TO AADHAR AS PER INCOME TAX DEPARTMENT./Name is not matching as per ITD status.,159,DMPITDPNITLITDNNMITDS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+253,ONHOLDREASON,160,0,Pdf not received,160,PNR,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+254,ONHOLDREASON,161,0,Xml not received,161,XNR,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+255,ONHOLDREASON,162,0,Details mismatch as per ITD :PAN IS NOT LINKED TO AADHAR AS PER INCOME TAX DEPARTMENT.,162,DMPITDPINTLITD,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+256,ONHOLDREASON,163,0,PDF or XML Not Received,163,PXNR,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+257,ONHOLDREASON,164,0,Details mismatch as per ITD :PAN IS NOT LINKED TO AADHAR AS PER INCOME TAX DEPARTMENT./DOb is not matching as per ITD status.,164,DMPITDPNITLITDDOMITDS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+258,ONHOLDREASON,165,0,Details mismatch as per ITD :PAN IS NOT LINKED TO AADHAR AS PER INCOME TAX DEPARTMENT./Name is not matching as per ITD status./DOb is not matching as per ITD status.,165,DMPITDPNITLITDNMITDSDOMITDS,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+259,ONHOLDREASON,166,0,PDF & XML Not Received,166,PXNR,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+260,ONHOLDREASON,167,0,KYC form is not received.,167,KFNR,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+261,ONHOLDREASON,168,0,EMAIL ID NOT CAPTURED,168,EINC,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+262,ONHOLDREASON,169,0,State mismatch with KRA,169,SMWK,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+263,ONHOLDREASON,170,0,PINCODE MISMATCHED WITH KRA SYSTEM QRCF,170,PMWKRAQ,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",NULL
+264,RESI_STATUS_NIND,1,1,Private Limited Co.,4,PR,"{""cmt_srl_num"": ""63"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",1
+265,RESI_STATUS_NIND,2,2,Public Ltd. Co.,5,PU,"{""cmt_srl_num"": ""64"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",2
+266,RESI_STATUS_NIND,3,3,Body Corporate,6,BC,"{""cmt_srl_num"": ""65"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",3
+267,RESI_STATUS_NIND,4,4,Trust,7,TRU,"{""cmt_srl_num"": ""66"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",4
+268,RESI_STATUS_NIND,5,5,Charities,8,CRT,"{""cmt_srl_num"": ""67"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",5
+269,RESI_STATUS_NIND,6,6,NGOs,9,NG,"{""cmt_srl_num"": ""68"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",6
+270,RESI_STATUS_NIND,7,7,Bank,10,BK,"{""cmt_srl_num"": ""69"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",7
+271,RESI_STATUS_NIND,8,8,Government Body,11,GB,"{""cmt_srl_num"": ""70"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",8
+272,RESI_STATUS_NIND,10,10,Defense Establishment,13,DE,"{""cmt_srl_num"": ""72"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",10
+273,RESI_STATUS_NIND,11,11,Society,14,S,"{""cmt_srl_num"": ""73"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",11
+274,RESI_STATUS_NIND,9,9,Non Government Organization,12,NGO,"{""cmt_srl_num"": ""71"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",9
+275,RESI_STATUS_NIND,99,19,Others (please specify),22,OTH,"{""cmt_srl_num"": ""null"", ""cmt_attr_key"": ""null"", ""cmt_drpdwn_key"": ""null""}",99
+276,RESI_STATUS_NIND,19,20,FPI - Category I,23,FPI,"{""cmt_srl_num"": ""1443"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",19
+277,RESI_STATUS_NIND,20,21,FPI - Category II,24,FPII,"{""cmt_srl_num"": ""1444"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",20
+278,RESI_STATUS_NIND,21,22,FPI - Category III,25,FPIII,"{""cmt_srl_num"": ""1445"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",21
+279,APPLICANTSTATUS,12,NULL,ACCEPTED BY KRA,NULL,accepted_by_us,"{""cmt_srl_num"": ""447"", ""cmt_attr_key"": ""STATUSBYKRA"", ""cmt_drpdwn_key"": ""STATUSBYKRA""}",4
+280,GENDER,4,NULL,CAPTURED,NULL,CAPTURED,"{""cmt_srl_num"": ""97"", ""cmt_attr_key"": ""MIINSTRUCTIONSTATUS"", ""cmt_drpdwn_key"": ""MIINSTRUCTIONSTATUS""}",1
+281,ONHOLDREASON,171,NULL,Email validation failed,NULL,EVF,"{""cmt_srl_num"": ""1576"", ""cmt_attr_key"": ""KRAONHOLDSTATUSLIST"", ""cmt_drpdwn_key"": ""KRAONHOLDSTATUSLIST""}",0
+282,ONHOLDREASON,172,NULL,Aadhaar Source validation failed,NULL,ASVF,"{""cmt_srl_num"": ""1578"", ""cmt_attr_key"": ""KRAONHOLDSTATUSLIST"", ""cmt_drpdwn_key"": ""KRAONHOLDSTATUSLIST""}",2
+283,ONHOLDREASON,173,NULL,Digital sign validation failed,NULL,DSVF,"{""cmt_srl_num"": ""1579"", ""cmt_attr_key"": ""KRAONHOLDSTATUSLIST"", ""cmt_drpdwn_key"": ""KRAONHOLDSTATUSLIST""}",3
+284,ONHOLDREASON,174,NULL,Consent not proper failed,NULL,CNPF,"{""cmt_srl_num"": ""1580"", ""cmt_attr_key"": ""KRAONHOLDSTATUSLIST"", ""cmt_drpdwn_key"": ""KRAONHOLDSTATUSLIST""}",4
+285,ONHOLDREASON,175,NULL,Invalid Document/source KYC file,NULL,IDKF,"{""cmt_srl_num"": ""1581"", ""cmt_attr_key"": ""KRAONHOLDSTATUSLIST"", ""cmt_drpdwn_key"": ""KRAONHOLDSTATUSLIST""}",5
+286,ONHOLDREASON,176,NULL,IT Pan validation failed,NULL,IPVF,"{""cmt_srl_num"": ""1582"", ""cmt_attr_key"": ""KRAONHOLDSTATUSLIST"", ""cmt_drpdwn_key"": ""KRAONHOLDSTATUSLIST""}",6
+287,ONHOLDREASON,177,NULL,Others,NULL,OTH,"{""cmt_srl_num"": ""81"", ""cmt_attr_key"": ""MISTATUS"", ""cmt_drpdwn_key"": ""MISTATUS""}",7
+288,ONHOLDREASON,178,NULL,Death/Demise-Documents pending,NULL,DDP,"{""cmt_srl_num"": ""1607"", ""cmt_attr_key"": ""KRAONHOLDSTATUSLIST"", ""cmt_drpdwn_key"": ""KRAONHOLDSTATUSLIST""}",Death/Demise-Documents pending
+289,KYCTYPE,-1,-1,NOT Specified,-1,NOT Specified,NULL,NULL
+290,RESI_STATUS_IND,-1,-1,UNKNOWN,-1,UNKNOWN,NULL,NULL

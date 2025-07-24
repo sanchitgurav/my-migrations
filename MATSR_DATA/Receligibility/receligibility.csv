@@ -1,0 +1,8 @@
+kyctype,data,document,ispoipoaadhar,xmlrequired,eligibility,extra_info,created_at,created_by,modified_at,modified_by,deleted_at,deleted_by
+DIGITAL KYC,yes,yes,no,no,yes,,,,,,,
+SARAL KYC,yes,yes,no,no,yes,,,,,,,
+NORMAL KYC,yes,yes,no,no,yes,,,,,,,
+E-KYC OFFILINE,yes,yes,yes,yes,yes,,,,,,,
+DIGILOCKER KYC,yes,yes,yes,yes,yes,,,,,,,
+E-KYC WITH OTP,yes,yes,yes,yes,yes,,,,,,,
+E-KYC WITH BIOMETRIC,yes,yes,yes,yes,yes,,,,,,,

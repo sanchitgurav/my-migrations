@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>update_extra_info</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+      <parameter>
+        <name>CONFIG_DIR</name>
+        <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration\Config</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>PAGE_OFFSET_SEQ</name>
+        <default_value>1</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>PAGE_SIZE</name>
+        <default_value>1000</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>ROOT_DIR</name>
+        <default_value>C:\Users\Lenovo\Desktop\NDML_data_migration\ndml-kra.data-migration\</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>SOURCE_DB_DATABASE</name>
+        <default_value>kra_old</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>SOURCE_DB_HOST</name>
+        <default_value>localhost</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>SOURCE_DB_PASSWORD</name>
+        <default_value>1234</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>SOURCE_DB_PORT</name>
+        <default_value>5432</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>SOURCE_DB_USER</name>
+        <default_value>postgres</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>TARGET_DB_HOST</name>
+        <default_value>43.204.1.103</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>TARGET_DB_PASSWORD</name>
+        <default_value>v2migrate</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>TARGET_DB_PORT</name>
+        <default_value>31655</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>TARGET_DB_USER</name>
+        <default_value>v2migrate</default_value>
+        <description/>
+      </parameter>
+      <parameter>
+        <name>TARGE_DB_DATABASE</name>
+        <default_value>kra_v2_db</default_value>
+        <description/>
+      </parameter>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2025/05/16 10:53:43.459</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2025/05/16 10:53:43.459</modified_date>
+    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>KRA_v1_db</name>
+    <server>${SOURCE_DB_HOST}</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>${SOURCE_DB_DATABASE}</database>
+    <port>${SOURCE_DB_PORT}</port>
+    <username>${SOURCE_DB_USER}</username>
+    <password>${SOURCE_DB_PASSWORD}</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_POSTGRESQL.stringtype</code>
+        <attribute>unspecified</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>${SOURCE_DB_PORT}</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>KRA_v2_db</name>
+    <server>${TARGET_DB_HOST}</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>${TARGE_DB_DATABASE}</database>
+    <port>${TARGET_DB_PORT}</port>
+    <username>${TARGET_DB_USER}</username>
+    <password>${TARGET_DB_PASSWORD}</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_POSTGRESQL.stringtype</code>
+        <attribute>unspecified</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>${TARGET_DB_PORT}</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Modified JavaScript value</from>
+      <to>extra_info_update</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Dummy (do nothing)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>final_lookup</from>
+      <to>Filter rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Modified JavaScript value</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>extra_info_input</from>
+      <to>final_lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Dummy (do nothing)</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Modified JavaScript value</send_true_to>
+    <send_false_to>Dummy (do nothing)</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>kycrecord_id</leftvalue>
+        <function>IS NOT NULL</function>
+        <rightvalue/>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>624</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Modified JavaScript value</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>
+var kycrecord_partition_key = 'reg_final';</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>kycrecord_partition_key</name>
+        <rename>kycrecord_partition_key</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>784</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>extra_info_input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>KRA_v1_db</connection>
+    <sql>SELECT 
+	kmt_instr_id,
+	kmt_bp_id,
+	kmt_pan,
+	jsonb_build_object (
+    'kmt_clnt_pep', kmt_clnt_pep,
+    'kmt_mother_prefix', kmt_mother_prefix,
+    'kmt_scan_images_uploaded', kmt_scan_images_uploaded,
+    'kmt_ref_num_1', kmt_ref_num_1,
+    'kmt_upd_authid', kmt_upd_authid,
+    'kmt_cap_authid',  kmt_cap_authid,
+    'kmt_person_ipv', kmt_person_ipv,
+    'kmt_father_spouse_prefix', kmt_father_spouse_prefix,
+    'kmt_upd_ip_addr', kmt_upd_ip_addr,
+    'kmt_mother_last_name', kmt_mother_last_name,
+    'kmt_dclrtn_date', kmt_dclrtn_date,
+    'kmt_sign_gnrtd_chckr', kmt_sign_gnrtd_chckr,
+    'kmt_mother_middle_name', kmt_mother_middle_name,
+    'kmt_reg_vr_authid', kmt_reg_vr_authid,
+    'kmt_slf_cert_doc_rcvd', kmt_slf_cert_doc_rcvd,
+    'kmt_incrp_plc', kmt_incrp_plc,
+    'kmt_clnt_prefix', kmt_clnt_prefix,
+    'kmt_clnt_occ', kmt_clnt_occ,
+    'kmt_client_upd_date', kmt_client_upd_date,
+    'kmt_kra_cap_authid', kmt_kra_cap_authid,
+    'kmt_othr_dtl', kmt_othr_dtl,
+    'kmt_cmnc_date', kmt_cmnc_date,
+    'kmt_place_of_declaration', kmt_place_of_declaration,
+    'kmt_ref_num_2', kmt_ref_num_2,
+    'kmt_kra_upd_tmstmp', kmt_kra_upd_tmstmp,
+    'kmt_vr_authid', kmt_vr_authid,
+    'kmt_clnt_othr_occ', kmt_clnt_othr_occ,
+    'kmt_pan_xmpt_chk', kmt_pan_xmpt_chk,
+    'kmt_org_name_ipv', kmt_org_name_ipv,
+    'kmt_mother_name', kmt_mother_name,
+    'kmt_kra_reg_vr_tmstmp', kmt_kra_reg_vr_tmstmp,
+    'kmt_form_rcvd', kmt_form_rcvd,
+    'kmt_crtn_ip_addr', kmt_crtn_ip_addr,
+    'personal_info', jsonb_build_object(
+      'pan', kmt_pan,
+      'name', kmt_clnt_nm,
+      'fathername', '',
+      'dob', kmt_clnt_cmpy_dob,
+      'resi_ind', kmt_resi_ind
+    ),
+    'company_info', jsonb_build_object(
+      'incorp_date', '',
+      'comm_date', '',
+      'cmpy_stat', kmt_cmpy_stat,
+      'cmpy_stat_val', kmt_cmpy_stat_val,
+      'incorp_place', '',
+      'gross_inc', kmt_gros_inc_ind,
+      'net_worth', kmt_nt_wrth,
+      'net_worth_dt', kmt_nt_wrth_dt
+    ),
+    'registration_info', jsonb_build_object(
+      'reg_no', kmt_cin,
+      'doc_rcvd_date', kmt_doc_rcvd_date,
+      'declr_place', '',
+      'fatca_cunt', kmt_fatca_cunt,
+      'fatca_dcl_date', kmt_fatca_dcl_date,
+      'rta_id', kmt_rta_id,
+      'kra_reg_vr_authid', kmt_kra_reg_vr_authid,
+      'kra_upd_authid', kmt_kra_upd_authid,
+      'kra_vr_authid', kmt_kra_vr_authid
+    ),
+    'rta_attributes', jsonb_build_object(
+      'fund_code', kmt_fundcode,
+      'docs_rcv_date', '',
+      'self_cert_docs', ''
+    ),
+     'consent_data', jsonb_build_object(
+      'consent_name', kmt_consent_name,
+      'consent_email', kmt_consent_email,
+      'consent_mob', kmt_consent_mobile,
+      'ubo_flag', ''
+    ),
+    'status_flags', jsonb_build_object(
+      'is_pep', '',
+      'orig_verified', '',
+      'doc_uploaded', kmt_doc_uploaded,
+      'form_rcvd', kmt_form_rcvd,
+      'true_cop_rcvd', kmt_true_cop_rcvd,
+      'self_cert_rcvd', '',
+      'sign_chkcr', '',
+      'pan_exempt', ''
+    ),
+    'timestamps', jsonb_build_object(
+      'decl_date', '',
+      'created_at', '',
+      'created_by', '',
+      'updated_at', '',
+      'updated_by', '',
+      'cap_date', kmt_cap_date,
+      'cap_tmstmp', kmt_cap_tmstmp,
+      'upd_date', kmt_upd_date,
+      'upd_tmstmp', kmt_upd_tmstmp,
+      'vr_date', kmt_vr_date,
+      'vr_tmstmp', kmt_vr_tmstmp
+    ),
+    'document_info', jsonb_build_object(
+      'doc_count', '',
+      'file_ref_id', kmt_file_ref_id,
+      'ref_num1', '',
+      'ref_num2', '',
+      'ln_num', kmt_ln_num
+    ),
+    'occupation_info', jsonb_build_object(
+      'occup', '',
+      'other_occup', '',
+      'other_info', ''
+    ),
+    'verification_info', jsonb_build_object(
+      'reg_vr_tmstmp', kmt_reg_vr_tmstmp,
+      'modf_ack_num', kmt_modf_ack_num,
+      'modf_frm_ack_num', kmt_modf_frm_ack_num,
+      'modf_flag', kmt_modf_flag,
+      'sign_gnrtd_chkr', '',
+      'submit_doc', kmt_submit_document
+    ),
+   'additional_data', jsonb_build_object(
+        'oth_nat', '',
+        'oth_state', '',
+        'entity_id', '',
+        'entity_type', '',
+        'nameperpan', '',
+        'scan_imgs_upld', '',
+        'flag_old_new_rec', kmt_flag_old_new_record,
+        'mthr_first_name', kmt_mother_first_name
+		)
+    ) AS extra_info
+FROM kra_mstr_tbl 
+WHERE kmt_instr_stat IN (11, 4)
+	AND kmt_pan IS NOT NULL;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>kmt_instr_id</name>
+        <length>15</length>
+        <precision>0</precision>
+        <origin>extra_info_input</origin>
+        <comments>kmt_instr_id</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Calcutta</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>kmt_bp_id</name>
+        <length>5</length>
+        <precision>-1</precision>
+        <origin>extra_info_input</origin>
+        <comments>kmt_bp_id</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Calcutta</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>kmt_pan</name>
+        <length>10</length>
+        <precision>-1</precision>
+        <origin>extra_info_input</origin>
+        <comments>kmt_pan</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Calcutta</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>extra_info</name>
+        <length>-1</length>
+        <precision>-1</precision>
+        <origin>extra_info_input</origin>
+        <comments>extra_info</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_US</date_format_locale>
+        <date_format_timezone>Asia/Calcutta</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>extra_info_update</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>KRA_v2_db</connection>
+    <commit>1000</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema>public</schema>
+      <table>kycrecords_final</table>
+      <key>
+        <name>kycrecord_id</name>
+        <field>id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>extra_info</name>
+        <rename>extra_info</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>partition_key</name>
+        <rename>kycrecord_partition_key</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>960</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>final_lookup</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>KRA_v2_db</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema>public</schema>
+      <table>kycrecords_final</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>kmt_instr_id</name>
+        <field>req_no</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>kmt_bp_id</name>
+        <field>mi_agency</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>kmt_pan</name>
+        <field>kra_id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>req_no</name>
+        <rename>req_no_custom</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+      <value>
+        <name>mi_agency</name>
+        <rename>mi_agency_custom</rename>
+        <default/>
+        <type>String</type>
+      </value>
+      <value>
+        <name>kra_id</name>
+        <rename>kra_id_custom</rename>
+        <default/>
+        <type>String</type>
+      </value>
+      <value>
+        <name>id</name>
+        <rename>kycrecord_id</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes/>
+</transformation>

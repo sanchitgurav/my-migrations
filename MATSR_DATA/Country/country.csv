@@ -1,0 +1,261 @@
+id,name,code,kracode,okracode,iso2code,iso3code,isonumcode,fatcakracode,fatcaokracode,micode,rtacode,miicode,created_by,created_at,modified_by,modified_at,deleted_by,deleted_at,isfatca,ismi,isrta,extra_info,v1_code,isactive,isdeleted
+1,AFGHANISTAN,1,01,001,AF,AFG,004,AF,AF,01,001,001,,,,,,,true,true,true,,1,true,false
+2,ALBENIA,2,02,003,AL,ALB,008,,,02,003,003,,,,,,,false,true,true,,2,true,false
+3,ALGERIA,3,03,004,DZ,DZA,012,DZ,DZ,03,004,004,,,,,,,true,true,true,,3,true,false
+4,ANGOLA,4,04,007,AO,AGO,024,AO,AO,04,007,007,,,,,,,true,true,true,,4,true,false
+5,ARGENTINA,5,05,011,AR,ARG,032,AR,AR,05,011,011,,,,,,,true,true,true,,5,true,false
+6,ARMENIA,6,06,012,AM,ARM,051,AM,AM,05,012,012,,,,,,,true,true,true,,6,true,false
+7,ARUBA,7,07,013,AW,ABW,533,AW,AW,07,013,013,,,,,,,true,true,true,,7,true,false
+8,AUSTRALIA,8,08,014,AU,AUS,036,AU,AU,08,014,014,,,,,,,true,true,true,,8,true,false
+9,AUSTRIA,9,09,015,AT,AUT,040,AT,AT,09,015,015,,,,,,,true,true,true,,9,true,false
+10,AZARBAIJAN,10,10,016,AZ,AZE,031,,,10,016,016,,,,,,,false,true,true,,10,true,false
+11,BAHAMAS,11,11,017,BS,BHS,044,BS,BS,11,017,017,,,,,,,true,true,true,,11,true,false
+12,BAHRAIN,12,12,018,BH,BHR,048,BH,BH,12,018,018,,,,,,,true,true,true,,12,true,false
+13,BANGLADESH,13,13,019,BD,BGD,050,BD,BD,13,019,019,,,,,,,true,true,true,,13,true,false
+14,BARBADOS,14,14,020,BB,BRB,052,,,14,020,020,,,,,,,false,true,true,,14,true,false
+15,BELARUS,15,15,021,BY,BLR,112,BY,BY,15,021,021,,,,,,,true,true,true,,15,true,false
+16,BELGIUM,16,16,022,BE,BEL,056,BE,BE,16,022,022,,,,,,,true,true,true,,16,true,false
+17,BELIZE,17,17,023,BZ,BLZ,084,BZ,BZ,17,023,023,,,,,,,true,true,true,,17,true,false
+18,BENIN,18,18,024,BJ,BEN,204,BJ,BJ,18,024,024,,,,,,,true,true,true,,18,true,false
+19,BERMUDA,19,19,025,BM,BMU,060,BM,BM,19,025,025,,,,,,,true,true,true,,19,true,false
+20,BHUTAN,20,20,026,BT,BTN,064,,,20,026,026,,,,,,,false,true,true,,20,true,false
+21,BOLIVIAN,21,21,027,BO,BOL,068,,,21,027,027,,,,,,,false,true,true,,21,true,false
+22,BOSNIA-HERZEGOVINA,22,22,028,BA,BIH,070,,,22,028,028,,,,,,,false,true,true,,22,true,false
+23,BOTSWANA,23,23,029,BW,BWA,072,BW,BW,23,029,029,,,,,,,true,true,true,,23,true,false
+24,BRAZIL,24,24,031,BR,BRA,076,,,24,031,031,,,,,,,false,true,true,,24,true,false
+25,BRUNEI,25,25,25,BN,BRN,096,,,25,025,025,,,,,,,false,true,true,,25,true,false
+26,BULGARIA,26,26,034,BG,BGR,100,BG,BG,26,034,034,,,,,,,true,true,true,,26,true,false
+27,BURKINA FASO,27,27,035,BF,BFA,854,BF,BF,27,035,035,,,,,,,true,true,true,,27,true,false
+28,BURUNDI,28,28,036,BI,BDI,108,BI,BI,28,036,036,,,,,,,true,true,true,,28,true,false
+29,CAMEROON REPUBLIC,29,29,,CM,CMR,120,,,29,,,,,,,,,false,true,false,,29,true,false
+30,CANADA,30,30,039,CA,CAN,124,CA,CA,30,039,039,,,,,,,true,true,true,,30,true,false
+31,CAPE VERDE,31,31,040,CV,CVP,132,,,31,040,040,,,,,,,false,true,true,,31,true,false
+32,CAYMAN ISLANDS,32,32,041,KY,CYM,136,KY,KY,32,041,041,,,,,,,true,true,true,,32,true,false
+33,CENTRAL AFRICAN REPUBLIC,33,33,042,CF,CAF,140,,,33,042,042,,,,,,,false,true,true,,33,true,false
+34,CHAD,34,34,043,TD,TCD,148,TD,TD,34,043,043,,,,,,,true,true,true,,34,true,false
+35,CHILE,35,35,044,CL,CHL,152,CL,CL,35,044,044,,,,,,,true,true,true,,35,true,false
+36,CHINA,36,36,045,CN,CHN,156,CN,CN,36,045,045,,,,,,,true,true,true,,36,true,false
+37,COLOMBIA,37,37,048,CO,COL,170,CO,CO,37,048,048,,,,,,,true,true,true,,37,true,false
+38,COMBODIA,38,38,037,KH,KHM,116,,,38,037,037,,,,,,,false,true,true,,38,true,false
+39,COMOROS,39,39,038,KM,COM,174,KM,KM,39,038,038,,,,,,,true,true,true,,39,true,false
+40,CONGO,40,40,050,CD,COD,180,CD,CD,40,050,050,,,,,,,true,true,true,,40,true,false
+41,COOK ISLANDS,41,41,052,CK,COK,184,CK,CK,41,052,052,,,,,,,true,true,true,,41,true,false
+42,COSTA RICA,42,42,053,CR,CRI,188,CR,CR,42,053,053,,,,,,,true,true,true,,42,true,false
+43,COTE D'IVOIRE,43,43,054,CI,CIV,384,,,43,054,054,,,,,,,false,true,true,,43,true,false
+44,CROATIA,44,44,055,HR,HRV,191,HR,HR,44,055,055,,,,,,,true,true,true,,44,true,false
+45,CUBA,45,45,056,CU,CUB,192,CU,CU,45,056,056,,,,,,,true,true,true,,45,true,false
+46,CYPRUS,46,46,057,CY,CYP,196,CY,CY,46,057,057,,,,,,,true,true,true,,46,true,false
+47,CZECH REPUBLIC,47,47,058,CZ,CZE,203,,,47,058,058,,,,,,,false,true,true,,47,true,false
+48,DENMARK,48,48,059,DK,DNK,208,DK,DK,48,059,059,,,,,,,true,true,true,,48,true,false
+49,DJIBOUTI,49,49,060,DJ,DJI,262,DJ,DJ,49,060,060,,,,,,,true,true,true,,49,true,false
+50,DOMINICA,50,50,061,DM,DMA,212,DM,DM,50,061,061,,,,,,,true,true,true,,50,true,false
+51,DOMINICAN REPUBLIC,51,51,062,DO,DOM,214,,,51,062,062,,,,,,,false,true,true,,51,true,false
+52,EAST TIMOR,52,52,,TL,TLS,626,,,52,,,,,,,,,false,true,false,,52,true,false
+53,ECUADOR,53,53,063,EC,ECU,218,EC,EC,53,063,063,,,,,,,true,true,true,,53,true,false
+54,EGYPT,54,54,064,EG,EGY,818,EG,EG,54,064,064,,,,,,,true,true,true,,54,true,false
+55,EL SALVADOR,55,55,065,SV,SLV,222,SV,SV,55,065,065,,,,,,,true,true,true,,55,true,false
+56,EQUATORIAL GUINEA,56,56,066,GQ,GNQ,226,GQ,GQ,56,066,066,,,,,,,true,true,true,,56,true,false
+57,ESTONIA,57,57,068,EE,EST,233,EE,EE,57,068,068,,,,,,,true,true,true,,57,true,false
+58,ETHIOPIA,58,58,069,ET,ETH,231,ET,ET,58,069,069,,,,,,,true,true,true,,58,true,false
+59,FALKLAND ISLANDS,59,59,,FK,FLK,238,FK,FK,59,,,,,,,,,true,true,false,,59,true,false
+60,FIJI,60,60,072,FJ,FJI,242,FJ,FJ,60,072,072,,,,,,,true,true,true,,60,true,false
+61,FINLAND,61,61,073,FI,FIN,246,FI,FI,61,073,073,,,,,,,true,true,true,,61,true,false
+62,FRANCE,62,62,074,FR,FRA,250,FR,FR,62,074,074,,,,,,,true,true,true,,62,true,false
+63,FRENCH GUIANA,63,63,075,GF,GUF,254,GF,GF,63,075,075,,,,,,,true,true,true,,63,true,false
+64,FRENCH POLYNESIA,64,64,076,PF,PYF,258,PF,PF,64,076,076,,,,,,,true,true,true,,64,true,false
+65,GABON,65,65,078,GA,GAB,266,GA,GA,65,078,078,,,,,,,true,true,true,,65,true,false
+66,GAMBIA,66,66,079,GM,GMB,270,GM,GM,66,079,079,,,,,,,true,true,true,,66,true,false
+67,GEORGIA,67,67,080,GE,GEO,268,GE,GE,67,080,080,,,,,,,true,true,true,,67,true,false
+68,GERMANY,68,68,081,DE,DEU,276,DE,DE,68,081,081,,,,,,,true,true,true,,68,true,false
+69,GHANA,69,69,082,GH,GHA,288,GH,GH,69,082,082,,,,,,,true,true,true,,69,true,false
+70,GIBRALTOR,70,70,083,GI,GIB,292,,,70,083,083,,,,,,,false,true,true,,70,true,false
+71,GREECE,71,71,084,GR,GRC,300,GR,GR,71,084,084,,,,,,,true,true,true,,71,true,false
+72,GREENLAND,72,72,085,GL,GRL,304,GL,GL,72,085,085,,,,,,,true,true,true,,72,true,false
+73,GRENADA,73,73,086,GD,GRD,308,GD,GD,73,086,086,,,,,,,true,true,true,,73,true,false
+74,GUADELOUPE,74,74,087,GP,GLP,312,GP,GP,74,087,087,,,,,,,true,true,true,,74,true,false
+75,GUAM,75,75,088,GU,GUM,316,GU,GU,75,088,088,,,,,,,true,true,true,,75,true,false
+76,GUATEMALA,76,76,089,GT,GTM,320,GT,GT,76,089,089,,,,,,,true,true,true,,76,true,false
+77,GUERNSEY,77,77,090,GG,GGY,831,GG,GG,77,090,090,,,,,,,true,true,true,,77,true,false
+78,GUINEA,78,78,091,GN,GIN,324,GN,GN,78,091,091,,,,,,,true,true,true,,78,true,false
+79,GUINEA-BISSAU,79,79,092,GW,GNB,624,GW,GW,79,092,092,,,,,,,true,true,true,,79,true,false
+80,GUYANA,80,80,093,GY,GUY,328,GY,GY,80,093,093,,,,,,,true,true,true,,80,true,false
+81,HAITI,81,81,094,HT,HTI,332,HT,HT,81,094,094,,,,,,,true,true,true,,81,true,false
+82,HONDURAS,82,82,097,HN,HND,340,HN,HN,82,097,097,,,,,,,true,true,true,,82,true,false
+83,HONGKONG,83,83,098,HK,HKG,344,,,83,098,098,,,,,,,false,true,true,,83,true,false
+84,ICELAND,84,84,100,IS,ISL,352,IS,IS,84,100,100,,,,,,,true,true,true,,84,true,false
+85,INDIA,85,85,101,IN,IND,356,IN,IN,85,101,101,,,,,,,true,true,true,,85,true,false
+86,INDONESIA,86,86,102,ID,IDN,360,ID,ID,86,102,102,,,,,,,true,true,true,,86,true,false
+87,IRAN,87,87,103,IR,IRN,364,IR,IR,87,103,103,,,,,,,true,true,true,,87,true,false
+88,IRAQ,88,88,104,IQ,IRQ,368,IQ,IQ,88,104,104,,,,,,,true,true,true,,88,true,false
+89,IRELAND,89,89,105,IE,IRL,372,IE,IE,89,105,105,,,,,,,true,true,true,,89,true,false
+90,ISRAEL,90,90,107,IL,ISR,376,IL,IL,90,107,107,,,,,,,true,true,true,,90,true,false
+91,ITALY,91,91,108,IT,ITA,380,IT,IT,91,108,108,,,,,,,true,true,true,,91,true,false
+92,JAMAICA,92,92,109,JM,JAM,388,JM,JM,92,109,109,,,,,,,true,true,true,,92,true,false
+93,JAPAN,93,93,110,JP,JPN,392,JP,JP,93,110,110,,,,,,,true,true,true,,93,true,false
+94,JORDAN,94,94,112,JO,JOR,400,JO,JO,94,112,112,,,,,,,true,true,true,,94,true,false
+95,KAZAKSTAN,95,95,113,KZ,KAZ,398,,,95,113,113,,,,,,,false,true,true,,95,true,false
+96,KENYA,96,96,114,KE,KEN,404,KE,KE,96,114,114,,,,,,,true,true,true,,96,true,false
+97,KUWAIT,97,97,118,KW,KWT,414,KW,KW,97,118,118,,,,,,,true,true,true,,97,true,false
+98,KYRGYZSTAN,98,98,119,KG,KGZ,417,KG,KG,98,119,119,,,,,,,true,true,true,,98,true,false
+99,LAOS,99,99,,LA,LAO,418,,,99,,,,,,,,,false,true,false,,99,true,false
+100,LATVIA,100,100,121,LV,LVA,428,LV,LV,100,121,121,,,,,,,true,true,true,,100,true,false
+101,LEBANON,101,101,122,LB,LBN,422,LB,LB,101,122,122,,,,,,,true,true,true,,101,true,false
+102,LESOTHO,102,102,123,LS,LSO,426,LS,LS,102,123,123,,,,,,,true,true,true,,102,true,false
+103,LIBERIA,103,103,124,LR,LBR,430,LR,LR,103,124,124,,,,,,,true,true,true,,103,true,false
+104,LIBYA,104,104,125,LY,LBY,434,LY,LY,104,125,125,,,,,,,true,true,true,,104,true,false
+105,LITHUANIA,105,105,127,LT,LTU,440,LT,LT,105,127,127,,,,,,,true,true,true,,105,true,false
+106,LUXEMBOURG,106,106,128,LU,LUX,442,LU,LU,106,128,128,,,,,,,true,true,true,,106,true,false
+107,MACAU,107,107,129,MO,MAC,446,,,107,129,129,,,,,,,false,true,true,,107,true,false
+108,MACEDONIA,108,108,130,MK,MKD,807,,,108,130,130,,,,,,,false,true,true,,108,true,false
+109,MADAGASCAR,109,109,131,MG,MDG,450,MG,MG,109,131,131,,,,,,,true,true,true,,109,true,false
+110,MALAWI,110,110,132,MW,MWI,454,MW,MW,110,132,132,,,,,,,true,true,true,,110,true,false
+111,MALAYSIA,111,111,133,MY,MYS,458,MY,MY,111,133,133,,,,,,,true,true,true,,111,true,false
+112,MALDIVES,112,112,134,MV,MDV,462,MV,MV,112,134,134,,,,,,,true,true,true,,112,true,false
+113,MALI,113,113,135,ML,MLI,466,ML,ML,113,135,135,,,,,,,true,true,true,,113,true,false
+114,MALTA,114,114,136,MT,MLT,470,MT,MT,114,136,136,,,,,,,true,true,true,,114,true,false
+115,MAURITANIA,115,115,139,MR,MRT,478,MR,MR,115,139,139,,,,,,,true,true,true,,115,true,false
+116,MAURITIUS,116,116,140,MU,MUS,480,MU,MU,116,140,140,,,,,,,true,true,true,,116,true,false
+117,MEXICO,117,117,142,MX,MEX,484,MX,MX,117,142,142,,,,,,,true,true,true,,117,true,false
+118,MOLDOVA,118,118,144,MD,MDA,498,,,118,144,144,,,,,,,false,true,true,,118,true,false
+119,MONETARY AUTHORITIES,119,119,,,,,,,119,,,,,,,,,false,true,false,,119,true,false
+120,MONGOLIA,120,120,146,MN,MNG,496,MN,MN,120,146,146,,,,,,,true,true,true,,120,true,false
+121,MONTSERRAT,121,121,147,MS,MSR,500,MS,MS,121,147,147,,,,,,,true,true,true,,121,true,false
+122,MOROCCA,122,122,148,MA,MAR,504,,,122,148,148,,,,,,,false,true,true,,122,true,false
+123,MOZAMBIQUE,123,123,149,MZ,MOZ,508,MZ,MZ,123,149,149,,,,,,,true,true,true,,123,true,false
+124,MYANMAR,124,124,150,MM,MMR,104,MM,MM,124,150,150,,,,,,,true,true,true,,124,true,false
+125,NAMIBIA,125,125,151,NA,NAM,516,NA,NA,125,151,151,,,,,,,true,true,true,,125,true,false
+126,NEPAL,126,126,153,NP,NPL,524,NP,NP,126,153,153,,,,,,,true,true,true,,126,true,false
+127,NETHERLANDS,127,127,154,NL,NLD,528,NL,NL,127,154,154,,,,,,,true,true,true,,127,true,false
+128,NETHERLANDS ANTILLES,128,128,155,,,,,,128,155,155,,,,,,,false,true,true,,128,true,false
+129,NEW CALEDONIA,129,129,156,NC,NCL,540,NZ,NZ,129,156,156,,,,,,,true,true,true,,129,true,false
+130,NEW ZEALAND,130,130,157,NZ,NZL,554,,,130,157,157,,,,,,,false,true,true,,130,true,false
+131,NICARAGUA,131,131,158,NI,NIC,558,NI,NI,131,158,158,,,,,,,true,true,true,,131,true,false
+132,NIGER,132,132,159,NE,NER,562,NE,NE,132,159,159,,,,,,,true,true,true,,132,true,false
+133,NIGERIA,133,133,160,NG,NGA,566,NG,NG,133,160,160,,,,,,,true,true,true,,133,true,false
+134,NO SPECIFIC COUNTRY,134,134,,,,,,,134,,,,,,,,,false,true,false,,134,true,false
+135,NORTH KOREA,135,135,116,KP,PRK,408,,,135,116,116,,,,,,,false,true,true,,135,true,false
+136,NORWAY,136,136,164,NO,NOR,578,NO,NO,136,164,164,,,,,,,true,true,true,,136,true,false
+137,OMAN,137,137,165,OM,OMN,512,OM,OM,137,165,165,,,,,,,true,true,true,,137,true,false
+138,PAKISTAN,138,138,166,PK,PAK,586,PK,PK,138,166,166,,,,,,,true,true,true,,138,true,false
+139,PANAMA,139,139,169,PA,PAN,591,PA,PA,139,169,169,,,,,,,true,true,true,,139,true,false
+140,PAPUA NEW GUINEA,140,140,170,PG,PNG,598,PG,PG,140,170,170,,,,,,,true,true,true,,140,true,false
+141,PARAGUAY,141,141,171,PY,PRY,600,PY,PY,141,171,171,,,,,,,true,true,true,,141,true,false
+142,PERU,142,142,172,PE,PER,604,PE,PE,142,172,172,,,,,,,true,true,true,,142,true,false
+143,PHILIPPINES,143,143,173,PH,PHL,608,PH,PH,143,173,173,,,,,,,true,true,true,,143,true,false
+144,POLAND,144,144,175,PL,POL,616,PL,PL,144,175,175,,,,,,,true,true,true,,144,true,false
+145,PORTUGAL,145,145,176,PT,PRT,620,PT,PT,145,176,176,,,,,,,true,true,true,,145,true,false
+146,QATAR,146,146,178,QA,QAT,634,QA,QA,146,178,178,,,,,,,true,true,true,,146,true,false
+147,ROMANIA,147,147,180,RO,ROU,642,RO,RO,147,180,180,,,,,,,true,true,true,,147,true,false
+148,RUSSIA,148,148,181,RU,RUS,643,,,148,181,181,,,,,,,false,true,true,,148,true,false
+149,RWANDA,149,149,182,RW,RWA,646,RW,RW,149,182,182,,,,,,,true,true,true,,149,true,false
+150,SAN TOME AND PRINCIPE,150,150,,,,,,,150,,,,,,,,,false,true,false,,150,true,false
+151,SAUDI ARABIA,151,151,191,SA,SAU,682,SA,SA,151,191,191,,,,,,,true,true,true,,151,true,false
+152,SENEGAL,152,152,192,SN,SEN,686,SN,SN,152,192,192,,,,,,,true,true,true,,152,true,false
+153,SEYCHELLES,153,153,194,SC,SYC,690,SC,SC,153,194,194,,,,,,,true,true,true,,153,true,false
+154,SINGAPORE,154,154,196,SG,SGP,702,SG,SG,154,196,196,,,,,,,true,true,true,,154,true,false
+155,SLOVAKIA,155,155,197,SK,SVK,703,SK,SK,155,197,197,,,,,,,true,true,true,,155,true,false
+156,SLOVENIA,156,156,198,SI,SVN,705,SI,SI,156,198,198,,,,,,,true,true,true,,156,true,false
+157,SOLOMON ISLANDS,157,157,199,SB,SLB,090,SB,SB,157,199,199,,,,,,,true,true,true,,157,true,false
+158,SOMALIA,158,158,200,SO,SOM,706,SO,SO,158,200,200,,,,,,,true,true,true,,158,true,false
+159,SOUTH AFRICA,159,159,201,ZA,ZAF,710,,,159,201,201,,,,,,,false,true,true,,159,true,false
+160,SOUTH KOREA,160,160,117,KR,KOR,410,,,160,117,117,,,,,,,false,true,true,,160,true,false
+161,SPAIN,161,161,203,ES,ESP,724,ES,ES,161,203,203,,,,,,,true,true,true,,161,true,false
+162,SRI LANKA,162,162,204,LK,LKA,144,LK,LK,162,204,204,,,,,,,true,true,true,,162,true,false
+163,ST. HELENA,163,163,,,,,,,163,,,,,,,,,false,true,false,,163,true,false
+164,ST. KITTS AND NEVIS,164,164,,,,,,,164,,,,,,,,,false,true,false,,164,true,false
+165,ST. VINCENT AND GRENADINES,165,165,,,,,,,165,,,,,,,,,false,true,false,,165,true,false
+166,ST.LUCIA,166,166,,,,,,,166,,,,,,,,,false,true,false,,166,true,false
+167,SUDAN,167,167,205,SD,SDN,729,SD,SD,167,205,205,,,,,,,true,true,true,,167,true,false
+168,SURINAME,168,168,206,SR,SUR,740,SR,SR,168,206,206,,,,,,,true,true,true,,168,true,false
+169,SWAZILAND,169,169,208,,,,,,169,208,208,,,,,,,false,true,true,,169,true,false
+170,SWEDEN,170,170,209,SE,SWE,752,SE,SE,170,209,209,,,,,,,true,true,true,,170,true,false
+171,SWITZERLAND,171,171,210,CH,CHE,756,CH,CH,171,210,210,,,,,,,true,true,true,,171,true,false
+172,SYRIA,172,172,,,,,,,172,,,,,,,,,false,true,false,,172,true,false
+173,TAIWAN,173,173,212,TW,TWN,158,TW,TW,173,212,212,,,,,,,true,true,true,,173,true,false
+174,TAJIKISTHAN,174,174,213,TJ,TJK,762,,,174,213,213,,,,,,,false,true,true,,174,true,false
+175,TANZANIA,175,175,214,TZ,TZA,834,,,175,214,214,,,,,,,false,true,true,,175,true,false
+176,THAILAND,176,176,215,TH,THA,764,TH,TH,176,215,215,,,,,,,true,true,true,,176,true,false
+177,TOGO REPUBLIC,177,177,217,TG,TGO,768,,,177,217,217,,,,,,,false,true,true,,177,true,false
+178,TOKYO,178,178,,,,,,,178,,,,,,,,,false,true,false,,178,true,false
+179,TONGA,179,179,219,TO,TON,776,TO,TO,179,219,219,,,,,,,true,true,true,,179,true,false
+180,TRINIDAD AND TOBAGO,180,180,220,TT,TTO,780,TT,TT,180,220,220,,,,,,,true,true,true,,180,true,false
+181,TUNISIA,181,181,221,TN,TUN,788,TN,TN,181,221,221,,,,,,,true,true,true,,181,true,false
+182,TURKEY,182,182,222,TR,TUR,792,,,182,222,222,,,,,,,false,true,true,,182,true,false
+183,TURKMENISTAN,183,183,223,TM,TKM,795,TM,TM,183,223,223,,,,,,,true,true,true,,183,true,false
+184,U A E,184,184,228,,,,,,184,228,228,,,,,,,false,true,true,,184,true,false
+185,UGANDA,185,185,226,UG,UGA,800,UG,UG,185,226,226,,,,,,,true,true,true,,185,true,false
+186,UNITED ARAB EMIRATES,186,186,228,AE,ARE,784,AE,AE,186,228,228,,,,,,,true,true,true,,186,true,false
+187,UNITED KINGDOM,187,187,229,GB,GBR,826,,,187,229,229,,,,,,,false,true,true,,187,true,false
+188,URUGUAY,188,188,232,UY,URY,858,UY,UY,188,232,232,,,,,,,true,true,true,,188,true,false
+189,USA,189,189,230,US,USA,840,,,189,230,230,,,,,,,false,true,true,,189,true,false
+190,VANUATU,190,190,234,VU,VUT,548,VU,VU,190,234,234,,,,,,,true,true,true,,190,true,false
+191,VENEZUELA,191,191,235,VE,VEN,862,VE,VE,191,235,235,,,,,,,true,true,true,,191,true,false
+192,VIETNAM,192,192,236,VN,VNM,704,,,192,236,236,,,,,,,false,true,true,,192,true,false
+193,WEST AFRICA,193,193,,,,,,,193,,,,,,,,,false,true,false,,193,true,false
+194,WESTERN SAMOA,194,194,,,,,,,194,,,,,,,,,false,true,false,,194,true,false
+195,YEMEN,195,195,241,YE,YEM,887,YE,YE,195,241,241,,,,,,,true,true,true,,195,true,false
+196,YUGOSLAVIAN,196,196,,,,,,,196,,,,,,,,,false,true,false,,196,true,false
+197,ZAIRE,197,197,,,,,,,197,,,,,,,,,false,true,false,,197,true,false
+198,ZAMBIA,198,198,242,ZM,ZMB,894,ZM,ZM,198,242,242,,,,,,,true,true,true,,198,true,false
+199,ZIMBABWE,199,199,243,ZW,ZWE,716,ZW,ZW,199,243,243,,,,,,,true,true,true,,199,true,false
+200,ALAND ISLANDS,200,200,002,AX,ALA,248,AX,AX,200,002,002,,,,,,,true,true,true,,200,true,false
+201,AMERICAN SAMOA,201,201,005,AS,ASM,016,AS,AS,201,005,005,,,,,,,true,true,true,,201,true,false
+202,ANDORRA,202,202,006,AD,AND,020,AD,AD,202,006,006,,,,,,,true,true,true,,202,true,false
+203,ANGUILLA,203,203,008,AI,AIA,660,AI,AI,203,008,008,,,,,,,true,true,true,,203,true,false
+204,ANTARCTICA,204,204,009,AQ,ATA,010,AQ,AQ,204,009,009,,,,,,,true,true,true,,204,true,false
+205,ANTIGUA AND BARBUDA,205,205,010,AG,ATG,028,AG,AG,205,010,010,,,,,,,true,true,true,,205,true,false
+206,BOUVET ISLAND,206,206,030,BV,BVT,074,BV,BV,206,030,030,,,,,,,true,true,true,,206,true,false
+207,BRITISH INDIAN OCEAN TERRITORY,207,207,032,IO,IOT,086,IO,IO,207,032,032,,,,,,,true,true,true,,207,true,false
+208,CHRISTMAS ISLAND,208,208,046,CX,CXR,162,CX,CX,208,046,046,,,,,,,true,true,true,,208,true,false
+209,COCOS (KEELING) ISLANDS,209,209,047,CC,CCK,166,CC,CC,209,047,047,,,,,,,true,true,true,,209,true,false
+210,ERITREA,210,210,067,ER,ERI,232,ER,ER,210,067,067,,,,,,,true,true,true,,210,true,false
+211,FALKLAND ISLANDS (MALVINAS),211,211,070,FK,FLK,238,,,211,070,070,,,,,,,false,true,true,,211,true,false
+212,FAROE ISLANDS,212,212,071,FO,FRO,234,FO,FO,212,071,071,,,,,,,true,true,true,,212,true,false
+213,FRENCH SOUTHERN TERRITORIES,213,213,077,TF,ATF,260,TF,TF,213,077,077,,,,,,,true,true,true,,213,true,false
+214,HEARD ISLAND AND MCDONALD ISLANDS,214,214,095,HM,HMD,334,HM,HM,214,095,095,,,,,,,true,true,true,,214,true,false
+215,HOLY SEE (VATICAN CITY STATE),215,215,096,VA,VAT,336,,,215,096,096,,,,,,,false,true,true,,215,true,false
+216,HUNGARY,216,216,099,HU,HUN,348,HU,HU,216,099,099,,,,,,,true,true,true,,216,true,false
+217,"IRAN, ISLAMIC REPUBLIC OF",217,217,103,IR,IRN,364,,,217,103,103,,,,,,,false,true,true,,217,true,false
+218,ISLE OF MAN,218,218,106,IM,IMN,833,IM,IM,218,106,106,,,,,,,true,true,true,,218,true,false
+219,KIRIBATI,219,219,115,KI,KIR,296,KI,KI,219,115,115,,,,,,,true,true,true,,219,true,false
+220,LAO PEOPLE'S DEMOCRATIC REPUBLIC,220,220,120,LA,LAO,418,,,220,120,120,,,,,,,false,true,true,,220,true,false
+221,LIBYAN ARAB JAMAHIRIYA,221,221,125,,,,,,221,125,125,,,,,,,false,true,true,,221,true,false
+222,LIECHTENSTEIN,222,222,126,LI,LIE,438,LI,LI,222,126,126,,,,,,,true,true,true,,222,true,false
+223,MARSHALL ISLANDS,223,223,137,MH,MHL,584,MH,MH,223,137,137,,,,,,,true,true,true,,223,true,false
+224,MARTINIQUE,224,224,138,MQ,MTQ,474,MQ,MQ,224,138,138,,,,,,,true,true,true,,224,true,false
+225,MAYOTTE,225,225,141,YT,MYT,175,YT,YT,225,141,141,,,,,,,true,true,true,,225,true,false
+226,"MICRONESIA, FEDERATED STATES OF",226,226,143,FM,FSM,583,,,226,143,143,,,,,,,false,true,true,,226,true,false
+227,MONACO,227,227,145,MC,MCO,492,MC,MC,227,145,145,,,,,,,true,true,true,,227,true,false
+228,NAURU,228,228,152,NR,NRU,520,NR,NR,228,152,152,,,,,,,true,true,true,,228,true,false
+229,NIUE,229,229,161,NU,NIU,570,NU,NU,229,161,161,,,,,,,true,true,true,,229,true,false
+230,NORFOLK ISLAND,230,230,162,NF,NFK,574,NF,NF,230,162,162,,,,,,,true,true,true,,230,true,false
+231,NORTHERN MARIANA ISLANDS,231,231,163,MP,MNP,580,MP,MP,231,163,163,,,,,,,true,true,true,,231,true,false
+232,PALAU,232,232,167,PW,PLW,585,PW,PW,232,167,167,,,,,,,true,true,true,,232,true,false
+233,"PALESTINIAN TERRITORY, OCCUPIED",233,233,168,,,,,,233,168,168,,,,,,,false,true,true,,233,true,false
+234,PITCAIRN,234,234,174,PN,PCN,612,PN,PN,234,174,174,,,,,,,true,true,true,,234,true,false
+235,PUERTO RICO,235,235,177,PR,PRI,630,PR,PR,235,177,177,,,,,,,true,true,true,,235,true,false
+236,REUNION,236,236,179,RE,REU,638,RE,RE,236,179,179,,,,,,,true,true,true,,236,true,false
+237,SAINT HELENA,237,237,183,SH,SHN,654,SH,SH,237,183,183,,,,,,,true,true,true,,237,true,false
+238,SAINT KITTS AND NEVIS,238,238,184,KN,KNA,659,KN,KN,238,184,184,,,,,,,true,true,true,,238,true,false
+239,SAINT LUCIA,239,239,185,LC,LCA,662,LC,LC,239,185,185,,,,,,,true,true,true,,239,true,false
+240,SAINT PIERRE AND MIQUELON,240,240,186,PM,SPM,666,PM,PM,240,186,186,,,,,,,true,true,true,,240,true,false
+241,SAINT VINCENT AND THE GRENADINES,241,241,187,VC,VCT,670,VC,VC,241,187,187,,,,,,,true,true,true,,241,true,false
+242,SAMOA,242,242,188,WS,WSM,882,WS,WS,242,188,188,,,,,,,true,true,true,,242,true,false
+243,SAN MARINO,243,243,189,SM,SMR,674,SM,SM,243,189,189,,,,,,,true,true,true,,243,true,false
+244,SAO TOME AND PRINCIPE,244,244,190,ST,STP,678,ST,ST,244,190,190,,,,,,,true,true,true,,244,true,false
+245,SERBIA AND MONTENEGRO,245,245,193,,,,,,245,193,193,,,,,,,false,true,true,,245,true,false
+246,SIERRA LEONE,246,246,195,SL,SLE,694,SL,SL,246,195,195,,,,,,,true,true,true,,246,true,false
+247,SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS,247,247,202,GS,SGS,239,GS,GS,247,202,202,,,,,,,true,true,true,,247,true,false
+248,SVALBARD AND JAN MAYEN,248,248,207,SJ,SJM,744,,,248,207,207,,,,,,,false,true,true,,248,true,false
+249,SYRIAN ARAB REPUBLIC,249,249,211,SY,SYR,760,SY,SY,249,211,211,,,,,,,true,true,true,,249,true,false
+250,TIMOR-LESTE,250,250,216,TL,TLS,626,TL,TL,250,216,216,,,,,,,true,true,true,,250,true,false
+251,TOKELAU,251,251,218,TK,TKL,772,TK,TK,251,218,218,,,,,,,true,true,true,,251,true,false
+252,TURKS AND CAICOS ISLANDS,252,252,224,TC,TCA,796,TC,TC,252,224,224,,,,,,,true,true,true,,252,true,false
+253,TUVALU,253,253,225,TV,TUV,798,TV,TV,253,225,225,,,,,,,true,true,true,,253,true,false
+254,UKRAINE,254,254,227,UA,UKR,804,UA,UA,254,227,227,,,,,,,true,true,true,,254,true,false
+255,UNITED STATES MINOR OUTLYING ISLANDS,255,255,231,UM,UMI,581,UM,UM,255,231,231,,,,,,,true,true,true,,255,true,false
+256,UZBEKISTAN,256,256,233,UZ,UZB,860,UZ,UZ,256,233,233,,,,,,,true,true,true,,256,true,false
+257,"VIRGIN ISLANDS, BRITISH",257,257,237,VG,VGB,092,,,257,237,237,,,,,,,false,true,true,,257,true,false
+258,"VIRGIN ISLANDS, U.S.",258,258,238,VI,VIR,850,,,258,238,238,,,,,,,false,true,true,,258,true,false
+259,WALLIS AND FUTUNA,259,259,239,WF,WLF,876,WF,WF,259,239,239,,,,,,,true,true,true,,259,true,false
+260,WESTERN SAHARA,260,260,240,EH,ESH,732,EH,EH,260,240,240,,,,,,,true,true,true,,260,true,false
