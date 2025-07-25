@@ -316,11 +316,11 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>80</xloc>
-      <yloc>304</yloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>country</name>
+      <name>v2_country</name>
       <description/>
       <type>TRANS</type>
       <attributes/>
@@ -354,8 +354,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>640</xloc>
-      <yloc>304</yloc>
+      <xloc>688</xloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -366,12 +366,12 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1096</xloc>
-      <yloc>174</yloc>
+      <xloc>1264</xloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>reset_country_id_seq</name>
+      <name>v2_reset_country_id_seq</name>
       <description/>
       <type>TRANS</type>
       <attributes/>
@@ -405,8 +405,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>496</xloc>
-      <yloc>304</yloc>
+      <xloc>528</xloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -444,12 +444,12 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>192</xloc>
-      <yloc>304</yloc>
+      <xloc>224</xloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>set_country_id_seq_to_max</name>
+      <name>v2_set_country_id_seq_to_max</name>
       <description/>
       <type>TRANS</type>
       <attributes/>
@@ -483,18 +483,18 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>800</xloc>
-      <yloc>304</yloc>
+      <xloc>864</xloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>log_start</name>
+      <name>v2_log_start</name>
       <description/>
       <type>TRANS</type>
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>${ROOT_DIR}MATSR_DATA/Country/migration_log_start.ktr</filename>
+      <filename>${ROOT_DIR}MATSR_DATA/Country/v2_migration_log_start.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -522,18 +522,18 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>344</xloc>
-      <yloc>174</yloc>
+      <xloc>368</xloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>log_end</name>
+      <name>v2_log_end</name>
       <description/>
       <type>TRANS</type>
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>${ROOT_DIR}MATSR_DATA/Country/migration_log_end.ktr</filename>
+      <filename>${ROOT_DIR}MATSR_DATA/Country/v2_migration_log_end.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -561,8 +561,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>952</xloc>
-      <yloc>174</yloc>
+      <xloc>1056</xloc>
+      <yloc>240</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
@@ -578,25 +578,7 @@
     </hop>
     <hop>
       <from>set_variable</from>
-      <to>log_start</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>N</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>log_start</from>
-      <to>reset_country_id_seq</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>N</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>reset_country_id_seq</from>
-      <to>country</to>
+      <to>v2_log_start</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -604,8 +586,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>country</from>
-      <to>set_country_id_seq_to_max</to>
+      <from>v2_log_start</from>
+      <to>v2_reset_country_id_seq</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -613,35 +595,35 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>set_country_id_seq_to_max</from>
-      <to>log_end</to>
+      <from>v2_reset_country_id_seq</from>
+      <to>v2_country</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>log_end</from>
+      <from>v2_country</from>
+      <to>v2_set_country_id_seq_to_max</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>v2_set_country_id_seq_to_max</from>
+      <to>v2_log_end</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>v2_log_end</from>
       <to>Success</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>N</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>set_country_id_seq_to_max</from>
-      <to>Success</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>set_variable</from>
-      <to>reset_country_id_seq</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>

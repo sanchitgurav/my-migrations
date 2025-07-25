@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>begin_alter_table</name>
+    <name>v2_migration_log_start</name>
     <description/>
     <extended_description/>
     <trans_version/>
     <trans_type>Normal</trans_type>
-    <trans_status>0</trans_status>
     <directory>/</directory>
     <parameters>
     </parameters>
@@ -428,23 +427,23 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2025/07/16 16:10:55.051</created_date>
+    <created_date>2025/07/25 19:53:50.596</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2025/07/16 16:10:55.051</modified_date>
+    <modified_date>2025/07/25 19:53:50.596</modified_date>
     <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <connection>
-    <name>KRA_v1_db</name>
-    <server>${SOURCE_DB_HOST}</server>
+    <name>KRA_v2_db</name>
+    <server>${TARGET_DB_HOST}</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>${SOURCE_DB_DATABASE}</database>
-    <port>${SOURCE_DB_PORT}</port>
-    <username>${SOURCE_DB_USER}</username>
-    <password>${SOURCE_DB_PASSWORD}</password>
+    <database>${TARGE_DB_DATABASE}</database>
+    <port>${TARGET_DB_PORT}</port>
+    <username>${TARGET_DB_USER}</username>
+    <password>${TARGET_DB_PASSWORD}</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -467,7 +466,7 @@
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
-        <attribute>${SOURCE_DB_PORT}</attribute>
+        <attribute>${TARGET_DB_PORT}</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
@@ -493,13 +492,50 @@
   </connection>
   <order>
     <hop>
-      <from>v1_migration_log</from>
-      <to>temp_create_country</to>
+      <from>country_max_id</from>
+      <to>v2_migration_log_start</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>temp_create_country</name>
+    <name>country_max_id</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>KRA_v2_db</connection>
+    <sql>SELECT 
+	COALESCE(MAX(id), 0) AS country_max_id,
+	COALESCE(MAX(id), 0) + 1 AS country_start_id
+FROM country;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta/>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>304</xloc>
+      <yloc>234</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>v2_migration_log_start</name>
     <type>ExecSQL</type>
     <description/>
     <distribute>Y</distribute>
@@ -509,84 +545,45 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>KRA_v1_db</connection>
-    <execute_each_row>N</execute_each_row>
-    <single_statement>Y</single_statement>
-    <replace_variables>N</replace_variables>
+    <connection>KRA_v2_db</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
     <quoteString>N</quoteString>
-    <sql>CREATE TABLE IF NOT EXISTS temp_country
+    <sql>INSERT INTO migration_log
 (
-    id SERIAL PRIMARY KEY,
-    code character varying(3) NOT NULL,
-    isocode2 character varying(3),
-    isocode3 character varying(3),
-    isocodenum character varying(3),
-    kracode character varying(3),
-    okracode character varying(3),
-    fatcakracode character varying(3),
-    fatcaokracode character varying(3),
-    micode character varying(3),
-    rtacode character varying(3),
-    miicode character varying(3),
-    isfatca boolean NOT NULL,
-    ismi boolean NOT NULL,
-    isrta boolean NOT NULL,
-    name character varying(100),
-    extra_info jsonb DEFAULT '{}'::jsonb,
-    v1_code character varying(3),
-    isactive boolean NOT NULL DEFAULT false,
-    isdeleted boolean NOT NULL DEFAULT false,
-    created_at timestamp(6) with time zone DEFAULT now(),
-    created_by bigint,
-    modified_at timestamp(6) with time zone DEFAULT now(),
-    modified_by bigint,
-    deleted_at timestamp(6) with time zone,
-    deleted_by character varying(100) COLLATE pg_catalog."default" DEFAULT 'underscoresystem'::character varying
-    --CONSTRAINT country_created_by_fkey FOREIGN KEY (created_by)
-    --    REFERENCES users (id) MATCH SIMPLE
-    --    ON UPDATE NO ACTION
-    --    ON DELETE NO ACTION,
-    --CONSTRAINT country_modified_by_fkey FOREIGN KEY (modified_by)
-    --    REFERENCES users (id) MATCH SIMPLE
-    --    ON UPDATE NO ACTION
-    --    ON DELETE NO ACTION
-);
-
-CREATE UNIQUE INDEX IF NOT EXISTS idx_country_code ON temp_country(code);
-
-CREATE INDEX IF NOT EXISTS idx_country_isactive ON temp_country(isactive);
-
-CREATE INDEX IF NOT EXISTS idx_country_isdeleted ON temp_country(isdeleted);
-
-CREATE INDEX IF NOT EXISTS idx_country_kracode ON temp_country(kracode);
-
-CREATE INDEX IF NOT EXISTS idx_country_okracode ON temp_country(okracode);
-
-ALTER TABLE temp_country ALTER COLUMN deleted_by DROP DEFAULT;
-
-ALTER TABLE temp_country ALTER COLUMN deleted_by TYPE bigint USING deleted_by::bigint;
-
---ALTER TABLE temp_country ALTER COLUMN deleted_by SET DEFAULT 0;
-
-ALTER TABLE temp_country DROP CONSTRAINT IF EXISTS country_deleted_by_fkey;
-
---ALTER TABLE temp_country ADD CONSTRAINT country_deleted_by_fkey
---    FOREIGN KEY (deleted_by)
---    REFERENCES users (id)
---    ON UPDATE NO ACTION
---    ON DELETE NO ACTION;
-
-ALTER TABLE temp_country
-ADD COLUMN IF NOT EXISTS x_updated_at TIMESTAMPTZ,
-ADD COLUMN IF NOT EXISTS x_sync_at TIMESTAMPTZ;
-
-</sql>
+    batch_id,
+    level,
+    table_type,
+    temp_table_name_v1,
+    table_name_v2,
+    last_id,
+    start_id,
+    start_time
+)
+VALUES 
+(
+    NOW(),                      -- batch_id
+    'info',                     -- level
+    'master',                   -- table_type
+	'temp_country',				--temp_table_name_v1
+    'country',                  -- table_name_v2
+	?,							-- last_id
+	?,							-- start_id
+    NOW()                       -- start_time
+);</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
     <delete_field/>
     <read_field/>
     <arguments>
+      <argument>
+        <name>country_max_id</name>
+      </argument>
+      <argument>
+        <name>country_start_id</name>
+      </argument>
     </arguments>
     <attributes/>
     <cluster_schema/>
@@ -598,61 +595,7 @@ ADD COLUMN IF NOT EXISTS x_sync_at TIMESTAMPTZ;
     </remotesteps>
     <GUI>
       <xloc>576</xloc>
-      <yloc>144</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>v1_migration_log</name>
-    <type>ExecSQL</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>KRA_v1_db</connection>
-    <execute_each_row>N</execute_each_row>
-    <single_statement>N</single_statement>
-    <replace_variables>N</replace_variables>
-    <quoteString>N</quoteString>
-    <sql>CREATE TABLE IF NOT EXISTS migration_log (
-	
-	id 					BIGSERIAL PRIMARY KEY,
-	--id				SERIAL PRIMARY KEY,
-    batch_id 			IMESTAMP, 				--current time
-    level 				CHARACTER VARYING,		--info, debug, notice
-    table_type 			CHARACTER VARYING,		--master, transaction
-    table_name_v1 		CHARACTER VARYING,
-    temp_table_name_v1 	CHARACTER VARYING,		
-    table_name_v2 		CHARACTER VARYING,		--v2 table
-    last_id 			BIGINT,					--max id
-    start_id 			BIGINT,					--max id + 1
-    end_id 				BIGINT,					--max id after migration
-    start_time 			TIMESTAMP,				--migration start
-    end_time 			TIMESTAMP,				--migration end
-    log 				JSONB					--success/error msg
-);</sql>
-    <set_params>N</set_params>
-    <insert_field/>
-    <update_field/>
-    <delete_field/>
-    <read_field/>
-    <arguments>
-    </arguments>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>176</xloc>
-      <yloc>144</yloc>
+      <yloc>234</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

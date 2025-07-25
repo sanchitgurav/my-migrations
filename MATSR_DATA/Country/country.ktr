@@ -495,21 +495,31 @@
     <hop>
       <from>country_lookup</from>
       <to>Filter rows</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>CSV file input</from>
       <to>country_lookup</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Filter rows</from>
       <to>Modified JavaScript value</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Modified JavaScript value</from>
       <to>temp_country_output</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Modified JavaScript value</from>
+      <to>temp_country_upsert</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>CSV file input</from>
+      <to>Modified JavaScript value</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -892,7 +902,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>480</xloc>
+      <xloc>464</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1134,8 +1144,176 @@ current_time = new Date();</jsScript_script>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>736</xloc>
+      <xloc>816</xloc>
       <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>temp_country_upsert</name>
+    <type>InsertUpdate</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>KRA_v1_db</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema/>
+      <table>temp_country</table>
+      <key>
+        <name>id</name>
+        <field>id</field>
+        <condition>=</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>id</name>
+        <rename>id</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>name</name>
+        <rename>name</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>code</name>
+        <rename>code</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>kracode</name>
+        <rename>kracode</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>okracode</name>
+        <rename>okracode</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>isocode2</name>
+        <rename>iso2code</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>isocode3</name>
+        <rename>iso3code</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>isocodenum</name>
+        <rename>isonumcode</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fatcakracode</name>
+        <rename>fatcakracode</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>fatcaokracode</name>
+        <rename>fatcaokracode</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>micode</name>
+        <rename>micode</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>rtacode</name>
+        <rename>rtacode</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>miicode</name>
+        <rename>miicode</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>created_by</name>
+        <rename>created_by</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>modified_by</name>
+        <rename>modified_by</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>deleted_by</name>
+        <rename>deleted_by</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>deleted_at</name>
+        <rename>deleted_at</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>isfatca</name>
+        <rename>isfatca</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>ismi</name>
+        <rename>ismi</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>isrta</name>
+        <rename>isrta</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>extra_info</name>
+        <rename>extra_info</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>v1_code</name>
+        <rename>v1_code</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>isactive</name>
+        <rename>isactive</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>isdeleted</name>
+        <rename>isdeleted</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>x_updated_at</name>
+        <rename>x_updated_at</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>x_sync_at</name>
+        <rename>current_time</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>816</xloc>
+      <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

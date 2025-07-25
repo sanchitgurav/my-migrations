@@ -327,8 +327,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>90</xloc>
-      <yloc>529</yloc>
+      <xloc>1168</xloc>
+      <yloc>256</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -366,18 +366,18 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>202</xloc>
-      <yloc>257</yloc>
+      <xloc>224</xloc>
+      <yloc>256</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>begin_alter_table</name>
+      <name>v2_begin_alter_table</name>
       <description/>
       <type>TRANS</type>
       <attributes/>
       <specification_method>filename</specification_method>
       <trans_object_id/>
-      <filename>${ROOT_DIR}MATSR_DATA/begin_alter_table.ktr</filename>
+      <filename>${ROOT_DIR}MATSR_DATA/v2_begin_alter_table.ktr</filename>
       <transname/>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
@@ -405,8 +405,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>368</xloc>
-      <yloc>176</yloc>
+      <xloc>384</xloc>
+      <yloc>256</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -442,8 +442,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>682</xloc>
-      <yloc>257</yloc>
+      <xloc>576</xloc>
+      <yloc>256</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -481,8 +481,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>682</xloc>
-      <yloc>113</yloc>
+      <xloc>576</xloc>
+      <yloc>80</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
@@ -498,19 +498,19 @@
     </hop>
     <hop>
       <from>Set_variable</from>
-      <to>begin_alter_table</to>
+      <to>v2_begin_alter_table</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>begin_alter_table</from>
+      <from>v2_begin_alter_table</from>
       <to>v2_country_master</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
@@ -530,15 +530,6 @@
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Set_variable</from>
-      <to>v2_country_master</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
   </hops>
