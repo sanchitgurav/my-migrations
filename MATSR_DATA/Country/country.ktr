@@ -493,21 +493,6 @@
   </connection>
   <order>
     <hop>
-      <from>country_lookup</from>
-      <to>Filter rows</to>
-      <enabled>N</enabled>
-    </hop>
-    <hop>
-      <from>CSV file input</from>
-      <to>country_lookup</to>
-      <enabled>N</enabled>
-    </hop>
-    <hop>
-      <from>Filter rows</from>
-      <to>Modified JavaScript value</to>
-      <enabled>N</enabled>
-    </hop>
-    <hop>
       <from>Modified JavaScript value</from>
       <to>temp_country_output</to>
       <enabled>N</enabled>
@@ -873,41 +858,6 @@
     </GUI>
   </step>
   <step>
-    <name>Filter rows</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to>Modified JavaScript value</send_true_to>
-    <send_false_to/>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue>lookup_id</leftvalue>
-        <function>IS NULL</function>
-        <rightvalue/>
-      </condition>
-    </compare>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>464</xloc>
-      <yloc>112</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>Modified JavaScript value</name>
     <type>ScriptValueMod</type>
     <description/>
@@ -950,54 +900,6 @@ current_time = new Date();</jsScript_script>
     <GUI>
       <xloc>544</xloc>
       <yloc>256</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>country_lookup</name>
-    <type>DBLookup</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>KRA_v1_db</connection>
-    <cache>N</cache>
-    <cache_load_all>N</cache_load_all>
-    <cache_size>0</cache_size>
-    <lookup>
-      <schema>public</schema>
-      <table>temp_country</table>
-      <orderby/>
-      <fail_on_multiple>N</fail_on_multiple>
-      <eat_row_on_failure>N</eat_row_on_failure>
-      <key>
-        <name>id</name>
-        <field>id</field>
-        <condition>=</condition>
-        <name2/>
-      </key>
-      <value>
-        <name>id</name>
-        <rename>lookup_id</rename>
-        <default/>
-        <type>None</type>
-      </value>
-    </lookup>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>320</xloc>
-      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
